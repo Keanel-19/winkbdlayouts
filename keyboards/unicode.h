@@ -485,6 +485,7 @@
 #define UC_D_DAGGER            0x2021
 #define UC_BULLET              0x2022
 #define UC_ELLIPSIS            0x2026
+#define UC_NNBSP               0x202F
 #define UC_PER_MILLE           0x2030
 #define UC_PRIME               0x2032
 #define UC_D_PRIME             0x2033

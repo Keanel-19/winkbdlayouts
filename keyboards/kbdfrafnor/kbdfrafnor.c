@@ -90,6 +90,19 @@ static VSC_LPWSTR key_names_ext[] = {
 };
 
 //---------------------------------------------------------------------------
+// Names of dead keys
+//---------------------------------------------------------------------------
+
+static DEADKEY_LPWSTR key_names_dead[] = {
+    L"\x00b4" L"ACUTE ACCENT",
+    L"^"      L"CIRCUMFLEX ACCENT",
+    L"\x00a8" L"DIAERESIS",
+    L"`"      L"GRAVE ACCENT",
+    L"~"      L"TILDE",
+    NULL
+};
+
+//---------------------------------------------------------------------------
 // Scan code to virtual key conversion table
 //---------------------------------------------------------------------------
 
@@ -450,12 +463,98 @@ static VK_TO_WCHAR_TABLE vk_to_wchar[] = {
 };
 
 //---------------------------------------------------------------------------
-// Ligatures to WCHAR translations
+// Dead keys sequences translations
 //---------------------------------------------------------------------------
 
-static LIGATURE4 ligatures[] = {
-    {'T', 3, {L't', L'e', L's', L't'}}, // AltGr
-    {0,   0, {0,    0,    0,    0}}
+static DEADKEY dead_keys[] = {
+    //              Accent        Composed               Flags
+    //              ------        --------               -----
+    DEADTRANS(L'e', UC_ACUTE,     UC_LOWER_E_ACUTE,      0x0000),
+    DEADTRANS(L'u', UC_ACUTE,     UC_LOWER_U_ACUTE,      0x0000),
+    DEADTRANS(L'i', UC_ACUTE,     UC_LOWER_I_ACUTE,      0x0000),
+    DEADTRANS(L'y', UC_ACUTE,     UC_LOWER_Y_ACUTE,      0x0000),
+    DEADTRANS(L'o', UC_ACUTE,     UC_LOWER_O_ACUTE,      0x0000),
+    DEADTRANS(L'a', UC_ACUTE,     UC_LOWER_A_ACUTE,      0x0000),
+    DEADTRANS(L'E', UC_ACUTE,     UC_UPPER_E_ACUTE,      0x0000),
+    DEADTRANS(L'U', UC_ACUTE,     UC_UPPER_U_ACUTE,      0x0000),
+    DEADTRANS(L'I', UC_ACUTE,     UC_UPPER_I_ACUTE,      0x0000),
+    DEADTRANS(L'Y', UC_ACUTE,     UC_UPPER_Y_ACUTE,      0x0000),
+    DEADTRANS(L'O', UC_ACUTE,     UC_UPPER_O_ACUTE,      0x0000),
+    DEADTRANS(L'A', UC_ACUTE,     UC_UPPER_A_ACUTE,      0x0000),
+    DEADTRANS(L'n', UC_ACUTE,     UC_LOWER_N_ACUTE,      0x0000),
+    DEADTRANS(L'c', UC_ACUTE,     UC_LOWER_C_ACUTE,      0x0000),
+    DEADTRANS(L's', UC_ACUTE,     UC_LOWER_S_ACUTE,      0x0000),
+    DEADTRANS(L'l', UC_ACUTE,     UC_LOWER_L_ACUTE,      0x0000),
+    DEADTRANS(L'r', UC_ACUTE,     UC_LOWER_R_ACUTE,      0x0000),
+    DEADTRANS(L'z', UC_ACUTE,     UC_LOWER_Z_ACUTE,      0x0000),
+    DEADTRANS(L'N', UC_ACUTE,     UC_UPPER_N_ACUTE,      0x0000),
+    DEADTRANS(L'C', UC_ACUTE,     UC_UPPER_C_ACUTE,      0x0000),
+    DEADTRANS(L'S', UC_ACUTE,     UC_UPPER_S_ACUTE,      0x0000),
+    DEADTRANS(L'L', UC_ACUTE,     UC_UPPER_L_ACUTE,      0x0000),
+    DEADTRANS(L'R', UC_ACUTE,     UC_UPPER_R_ACUTE,      0x0000),
+    DEADTRANS(L'Z', UC_ACUTE,     UC_UPPER_Z_ACUTE,      0x0000),
+    DEADTRANS(L' ', UC_ACUTE,     UC_ACUTE,              0x0000),
+    DEADTRANS(L'e', L'^',         UC_LOWER_E_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'u', L'^',         UC_LOWER_U_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'i', L'^',         UC_LOWER_I_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'o', L'^',         UC_LOWER_O_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'a', L'^',         UC_LOWER_A_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'E', L'^',         UC_UPPER_E_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'U', L'^',         UC_UPPER_U_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'I', L'^',         UC_UPPER_I_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'O', L'^',         UC_UPPER_O_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'A', L'^',         UC_UPPER_A_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'c', L'^',         UC_LOWER_C_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'h', L'^',         UC_LOWER_H_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'j', L'^',         UC_LOWER_J_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'g', L'^',         UC_LOWER_G_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L's', L'^',         UC_LOWER_S_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'w', L'^',         UC_LOWER_W_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'y', L'^',         UC_LOWER_Y_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'C', L'^',         UC_UPPER_C_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'H', L'^',         UC_UPPER_H_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'J', L'^',         UC_UPPER_J_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'G', L'^',         UC_UPPER_G_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'S', L'^',         UC_UPPER_S_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'W', L'^',         UC_UPPER_W_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L'Y', L'^',         UC_UPPER_Y_CIRCUMFLEX, 0x0000),
+    DEADTRANS(L' ', L'^',         L'^',                  0x0000),
+    DEADTRANS(L'e', UC_DIAERESIS, UC_LOWER_E_DIAERESIS,  0x0000),
+    DEADTRANS(L'u', UC_DIAERESIS, UC_LOWER_U_DIAERESIS,  0x0000),
+    DEADTRANS(L'i', UC_DIAERESIS, UC_LOWER_I_DIAERESIS,  0x0000),
+    DEADTRANS(L'y', UC_DIAERESIS, UC_LOWER_Y_DIAERESIS,  0x0000),
+    DEADTRANS(L'o', UC_DIAERESIS, UC_LOWER_O_DIAERESIS,  0x0000),
+    DEADTRANS(L'a', UC_DIAERESIS, UC_LOWER_A_DIAERESIS,  0x0000),
+    DEADTRANS(L'E', UC_DIAERESIS, UC_UPPER_E_DIAERESIS,  0x0000),
+    DEADTRANS(L'U', UC_DIAERESIS, UC_UPPER_U_DIAERESIS,  0x0000),
+    DEADTRANS(L'I', UC_DIAERESIS, UC_UPPER_I_DIAERESIS,  0x0000),
+    DEADTRANS(L'Y', UC_DIAERESIS, UC_UPPER_Y_DIAERESIS,  0x0000),
+    DEADTRANS(L'O', UC_DIAERESIS, UC_UPPER_O_DIAERESIS,  0x0000),
+    DEADTRANS(L'A', UC_DIAERESIS, UC_UPPER_A_DIAERESIS,  0x0000),
+    DEADTRANS(L' ', UC_DIAERESIS, UC_DIAERESIS,          0x0000),
+    DEADTRANS(L'e', L'`',         UC_LOWER_E_GRAVE,      0x0000),
+    DEADTRANS(L'u', L'`',         UC_LOWER_U_GRAVE,      0x0000),
+    DEADTRANS(L'i', L'`',         UC_LOWER_I_GRAVE,      0x0000),
+    DEADTRANS(L'o', L'`',         UC_LOWER_O_GRAVE,      0x0000),
+    DEADTRANS(L'a', L'`',         UC_LOWER_A_GRAVE,      0x0000),
+    DEADTRANS(L'E', L'`',         UC_UPPER_E_GRAVE,      0x0000),
+    DEADTRANS(L'U', L'`',         UC_UPPER_U_GRAVE,      0x0000),
+    DEADTRANS(L'I', L'`',         UC_UPPER_I_GRAVE,      0x0000),
+    DEADTRANS(L'O', L'`',         UC_UPPER_O_GRAVE,      0x0000),
+    DEADTRANS(L'A', L'`',         UC_UPPER_A_GRAVE,      0x0000),
+    DEADTRANS(L' ', L'`',         L'`',                  0x0000),
+    DEADTRANS(L'n', L'~',         UC_LOWER_N_TILDE,      0x0000),
+    DEADTRANS(L'o', L'~',         UC_LOWER_O_TILDE,      0x0000),
+    DEADTRANS(L'a', L'~',         UC_LOWER_A_TILDE,      0x0000),
+    DEADTRANS(L'N', L'~',         UC_UPPER_N_TILDE,      0x0000),
+    DEADTRANS(L'O', L'~',         UC_UPPER_O_TILDE,      0x0000),
+    DEADTRANS(L'A', L'~',         UC_UPPER_A_TILDE,      0x0000),
+    DEADTRANS(L'u', L'~',         UC_LOWER_U_TILDE,      0x0000),
+    DEADTRANS(L'i', L'~',         UC_LOWER_I_TILDE,      0x0000),
+    DEADTRANS(L'U', L'~',         UC_UPPER_U_TILDE,      0x0000),
+    DEADTRANS(L'I', L'~',         UC_UPPER_I_TILDE,      0x0000),
+    DEADTRANS(L' ', L'~',         L'~',                  0x0000),
+    {0, 0, 0}
 };
 
 //---------------------------------------------------------------------------
@@ -465,18 +564,18 @@ static LIGATURE4 ligatures[] = {
 static KBDTABLES kbd_tables = {
     .pCharModifiers  = &char_modifiers,
     .pVkToWcharTable = vk_to_wchar,
-    .pDeadKey        = NULL,
+    .pDeadKey        = dead_keys,
     .pKeyNames       = key_names,
     .pKeyNamesExt    = key_names_ext,
-    .pKeyNamesDead   = NULL,
+    .pKeyNamesDead   = key_names_dead,
     .pusVSCtoVK      = scancode_to_vk,
     .bMaxVSCtoVK     = ARRAYSIZE(scancode_to_vk),
     .pVSCtoVK_E0     = scancode_to_vk_e0,
     .pVSCtoVK_E1     = scancode_to_vk_e1,
     .fLocaleFlags    = MAKELONG(KLLF_ALTGR, KBD_VERSION),
-    .nLgMax          = 4,
-    .cbLgEntry       = sizeof(ligatures[0]),
-    .pLigature       = (PLIGATURE1)ligatures,
+    .nLgMax          = 0,
+    .cbLgEntry       = 0,
+    .pLigature       = NULL,
     .dwType          = 0,
     .dwSubType       = 0,
 };

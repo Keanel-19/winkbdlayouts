@@ -1,0 +1,981 @@
+KBD	KBFRZ71	"Français - AZERTY NF Z71-300"
+
+COPYRIGHT	"© 2019 Creative Commons"
+
+COMPANY	"Creative Commons"
+
+LOCALENAME	"fr-FR"
+
+LOCALEID	"0000040c"
+
+VERSION	1.0
+
+ATTRIBUTES
+ALTGR
+
+SHIFTSTATE
+
+0	//Column 4
+1	//Column 5 : Shft
+2	//Column 6 :	   Ctrl
+3	//Column 7 : Shft  Ctrl
+6	//Column 8 :	   Ctrl Alt
+7	//Column 9 : Shft  Ctrl Alt
+
+LAYOUT		;an extra '@' at the end is a dead key
+// CLALT = CAPLOK|CAPLOKALTGR
+
+//SC	VK_		Cap		4		5		6		7		8		9
+//--	----	----	----	----	----	----	----	----
+
+02		1		SGCap	00e0	L'1'	-1		-1		00a7	00c0		// à 1   § À 
+-1		-1		0		00c0	L'1'	-1		-1		-1		-1			// À 1 
+03		2		SGCap	00e9	L'2'	-1		-1		00b4@	00c9		// é 2   ´ É 
+-1		-1		0		00c9	L'2'	-1		-1		-1		-1			// É 2 
+04		3		SGCap	00e8	L'3'	-1		-1		L'`'@	00c8		// è 3   ` È 
+-1		-1		0		00c8	L'3'	-1		-1		-1		-1			// È 3 
+05		4		SGCap	00ea	L'4'	-1		-1		L'^'@	00ca		// ê 4   ^ Ê 
+-1		-1		0		00ca	L'4'	-1		-1		-1		-1			// Ê 4 
+06		5		0		00a8@	L'5'	-1		UC_ESC	02c7@	-1			// ¨ 5   ˇ   
+07		6		0		L'&'	L'6'	-1		UC_US	02dd@	02f5@		// & 6   ˝ ˵ 
+08		7		0		2018	L'7'	-1		-1		00af@	-1			// ‘ 7   ¯   
+09		8		0		2019	L'8'	-1		UC_FS	2014	-1			// ’ 8   —   
+0a		9		0		00ab	L'9'	-1		UC_RS	2039	201c		// « 9   ‹ “ 
+0b		0		0		00bb	L'0'	0000	-1		203a	201d		// » 0   › ” 
+0c		OEM_4	0		L'\''	L'"'	-1		-1		00b0	02da@		// ' "   ° ˚ 
+0d		OEM_6	0		017f@	00a4@	UC_ESC	-1		00b5@	-1			// ſ ¤   µ   
+
+10		A		CLALT	a		L'A'	-1		-1		00e6	00c6		// a A   æ Æ
+11		Z		CAPLOK	z		L'Z'	-1		-1		00a3	-1			// z Z   £   
+12		E		CAPLOK	e		L'E'	-1		-1		20ac	-1			// e E   €   
+13		R		CAPLOK	r		L'R'	-1		-1		L'{'	00ae		// r R   { ® 
+14		T		CAPLOK	t		L'T'	-1		-1		L'}'	2122		// t T   } ™ 
+15		Y		CAPLOK	y		L'Y'	-1		-1		-1		-1			// y Y       
+16		U		CLALT	u		L'U'	-1		-1		00f9	00d9		// u U   ù Ù 
+17		I		CAPLOK	i		L'I'	-1		-1		02d9@	0323@		// i I   ˙ ◌̣ 
+18		O		CLALT	o		L'O'	-1		-1		0153	0152		// o O   œ Œ 
+19		P		CAPLOK	p		L'P'	-1		-1		L'%'	2030		// p P   % ‰ 
+1a	OEM_MINUS	0		L'-'	2013	-1		-1		2212	2011		// - –   − ‑ 
+1b	OEM_PLUS	0		L'+'	00b1	-1		-1		2020	2021		// + ±   † ‡ 
+1e		Q		CLALT	q		L'Q'	-1		-1		03b8	03f4		// q Q   θ ϴ  
+1f		S		CLALT	s		L'S'	-1		-1		00df	1e9e		// s S   ß ẞ
+20		D		CAPLOK	d		L'D'	-1		-1		L'$'	-1			// d D   $   
+21		F		CAPLOK	f		L'F'	-1		-1		L'('	L'['		// f F   ( [ 
+22		G		CAPLOK	g		L'G'	-1		-1		L')'	L']'		// g G   ) ] 
+23		H		CAPLOK	h		L'H'	-1		-1		02cd@	-1			// h H   ˍ   
+24		J		CAPLOK	j		L'J'	-1		-1		-1		-1			// j J       
+25		K		CAPLOK	k		L'K'	-1		-1		0337@	-1			// k K   ◌̷   
+26		L		CAPLOK	l		L'L'	-1		-1		L'|'	-1			// l L   |   
+27		M		CAPLOK	m		L'M'	-1		-1		221e	-1			// m M   ∞   
+28		OEM_3	0		L'/'	L'\'	-1		-1		00f7	221a		// / \   ÷ √ 
+29		OEM_7	0		L'@'	L'#'	-1		-1		02d8@	0311@		// @ #   ˘ ◌̑ 
+2b		OEM_5	0		L'*'	00bd	UC_FS	-1		00d7	00bc		// * ½   × ¼ 
+56		OEM_102	0		L'<'	L'>'	UC_FS	-1		2a7d	2a7e		// < >   ⩽ ⩾ 
+2c		W		CLALT	w		L'W'	-1		-1		0292	01b7		// w W   ʒ Ʒ 
+2d		X		CAPLOK	x		L'X'	-1		-1		00a9	-1			// x X   ©   
+2e		C		CLALT	c		L'C'	-1		-1		00e7	00c7		// c C   ç Ç 
+2f		V		CAPLOK	v		L'V'	-1		-1		00b8@	02db@		// v V   ¸ ˛ 
+30		B		CAPLOK	b		L'B'	-1		-1		0335@	-1			// b B   ◌̵   
+31		N		CAPLOK	n		L'N'	-1		-1		L'~'@	-1			// n N   ~   
+32	OEM_PERIOD	0		L'.'	L'?'	-1		-1		00bf	-1			// . ?   ¿   
+33	OEM_COMMA	0		L','	L'!'	-1		-1		00a1	0326@		// , !   ¡ ◌̦ 
+34		OEM_2	0		L':'	2026	-1		-1		00b7	-1			// : …   ·   
+35		OEM_8	0		L';'	L'='	UC_GS	-1		2243	2260		// ; =   ≃ ≠ 
+39		SPACE	0		L' '	L'_'	L' '	-1		UC_NBSP	UC_NNBSP	//   _       
+
+// The following three keys are specifically set last in the layout
+// to prevent the Win32 VkKeyScanEx function to report an incorrect
+// scan code for the '.', '/' and '°' characters that double as
+//
+// See https://github.com/springcomp/optimized-azerty-win/issues/73.
+
+
+DEADKEY 0326
+
+L'S'	0218	// S -> Ș
+L'T'	021a	// T -> Ț
+L's'	0219	// s -> ș
+L't'	021b	// t -> ț
+
+00a4	0326	// ¤ -> ◌̦
+00b5	0326	// µ -> ◌̦
+017f	0326	// ſ -> ◌̦
+UC_NBSP	0326	//   -> ◌̦
+UC_NNBSP	0326	//   -> ◌̦
+L' '	0326	//   -> ◌̦
+
+DEADKEY 0335
+
+L'B'	0243	// B -> Ƀ
+L'D'	0110	// D -> Đ
+L'G'	01e4	// G -> Ǥ
+L'H'	0126	// H -> Ħ
+L'I'	0197	// I -> Ɨ
+L'J'	0248	// J -> Ɉ
+L'L'	023d	// L -> Ƚ
+L'R'	024c	// R -> Ɍ
+L'T'	0166	// T -> Ŧ
+L'U'	0244	// U -> Ʉ
+L'Y'	024e	// Y -> Ɏ
+L'Z'	01b5	// Z -> Ƶ
+L'b'	0180	// b -> ƀ
+L'd'	0111	// d -> đ
+L'g'	01e5	// g -> ǥ
+L'h'	0127	// h -> ħ
+L'j'	0249	// j -> ɉ
+L'l'	019a	// l -> ƚ
+L'r'	024d	// r -> ɍ
+L't'	0167	// t -> ŧ
+L'y'	024f	// y -> ɏ
+L'z'	01b6	// z -> ƶ
+
+00a4	0335	// ¤ -> ◌̵
+00b5	0335	// µ -> ◌̵
+017f	0335	// ſ -> ◌̵
+UC_NBSP	0335	//   -> ◌̵
+UC_NNBSP	0335	//   -> ◌̵
+L' '	0335	//   -> ◌̵
+
+DEADKEY 0323
+
+L'A'	1ea0	// A -> Ạ
+L'B'	1e04	// B -> Ḅ
+L'D'	1e0c	// D -> Ḍ
+L'E'	1eb8	// E -> Ẹ
+L'H'	1e24	// H -> Ḥ
+L'I'	1eca	// I -> Ị
+L'K'	1e32	// K -> Ḳ
+L'L'	1e36	// L -> Ḷ
+L'M'	1e42	// M -> Ṃ
+L'N'	1e46	// N -> Ṇ
+L'O'	1ecc	// O -> Ọ
+L'R'	1e5a	// R -> Ṛ
+L'S'	1e62	// S -> Ṣ
+L'T'	1e6c	// T -> Ṭ
+L'U'	1ee4	// U -> Ụ
+L'V'	1e7e	// V -> Ṿ
+L'W'	1e88	// W -> Ẉ
+L'Y'	1ef4	// Y -> Ỵ
+L'Z'	1e92	// Z -> Ẓ
+L'a'	1ea1	// a -> ạ
+L'b'	1e05	// b -> ḅ
+L'd'	1e0d	// d -> ḍ
+L'e'	1eb9	// e -> ẹ
+L'h'	1e25	// h -> ḥ
+L'i'	1ecb	// i -> ị
+L'k'	1e33	// k -> ḳ
+L'l'	1e37	// l -> ḷ
+L'm'	1e43	// m -> ṃ
+L'n'	1e47	// n -> ṇ
+L'o'	1ecd	// o -> ọ
+L'r'	1e5b	// r -> ṛ
+L's'	1e63	// s -> ṣ
+L't'	1e6d	// t -> ṭ
+L'u'	1ee5	// u -> ụ
+L'v'	1e7f	// v -> ṿ
+L'w'	1e89	// w -> ẉ
+L'y'	1ef5	// y -> ỵ
+L'z'	1e93	// z -> ẓ
+00ca	1ec6	// Ê -> Ệ
+00ea	1ec7	// ê -> ệ
+
+00a4	0323	// ¤ -> ◌̣
+00b5	0323	// µ -> ◌̣
+017f	0323	// ſ -> ◌̣
+UC_NBSP	0323	//   -> ◌̣
+UC_NNBSP	0323	//   -> ◌̣
+L' '	0323	//   -> ◌̣
+
+DEADKEY 0337
+
+L'<'	226e	// < -> ≮
+L'='	2260	// = -> ≠
+L'>'	226f	// > -> ≯
+L'A'	023a	// A -> Ⱥ
+L'C'	023b	// C -> Ȼ
+L'E'	0246	// E -> Ɇ
+L'L'	0141	// L -> Ł
+L'O'	00d8	// O -> Ø
+L'T'	023e	// T -> Ⱦ
+L'c'	023c	// c -> ȼ
+L'e'	0247	// e -> ɇ
+L'l'	0142	// l -> ł
+L'o'	00f8	// o -> ø
+017f	1e9c	// ſ -> ẜ
+2243	2244	// ≃ -> ≄
+2a7d	2270	// ⩽ -> ≰
+2a7e	2271	// ⩾ -> ≱
+
+00a4	0337	// ¤ -> ◌̷
+00b5	0337	// µ -> ◌̷
+UC_NBSP	0337	//   -> ◌̷
+UC_NNBSP	0337	//   -> ◌̷
+L' '	0337	//   -> ◌̷
+
+DEADKEY L'^'
+
+L'('	207d	// ( -> ⁽
+L')'	207e	// ) -> ⁾
+L'+'	207a	// + -> ⁺
+L'-'	207b	// - -> ⁻
+L'0'	2070	// 0 -> ⁰
+L'1'	00b9	// 1 -> ¹
+L'2'	00b2	// 2 -> ²
+L'3'	00b3	// 3 -> ³
+L'4'	2074	// 4 -> ⁴
+L'5'	2075	// 5 -> ⁵
+L'6'	2076	// 6 -> ⁶
+L'7'	2077	// 7 -> ⁷
+L'8'	2078	// 8 -> ⁸
+L'9'	2079	// 9 -> ⁹
+L'='	207c	// = -> ⁼
+L'A'	00c2	// A -> Â
+L'C'	0108	// C -> Ĉ
+L'E'	00ca	// E -> Ê
+L'G'	011c	// G -> Ĝ
+L'H'	0124	// H -> Ĥ
+L'I'	00ce	// I -> Î
+L'J'	0134	// J -> Ĵ
+L'O'	00d4	// O -> Ô
+L'S'	015c	// S -> Ŝ
+L'U'	00db	// U -> Û
+L'W'	0174	// W -> Ŵ
+L'Y'	0176	// Y -> Ŷ
+L'Z'	1e90	// Z -> Ẑ
+L'a'	00e2	// a -> â
+L'c'	0109	// c -> ĉ
+L'e'	00ea	// e -> ê
+L'g'	011d	// g -> ĝ
+L'h'	0125	// h -> ĥ
+L'i'	00ee	// i -> î
+L'j'	0135	// j -> ĵ
+L'o'	00f4	// o -> ô
+L's'	015d	// s -> ŝ
+L'u'	00fb	// u -> û
+L'w'	0175	// w -> ŵ
+L'x'	02e3	// x -> ˣ
+L'y'	0177	// y -> ŷ
+L'z'	1e91	// z -> ẑ
+00c0	1ea6	// À -> Ầ
+00c8	1ec0	// È -> Ề
+00c9	1ebe	// É -> Ế
+00e0	1ea7	// à -> ầ
+00e8	1ec1	// è -> ề
+00e9	1ebf	// é -> ế
+2212	207b	// − -> ⁻
+
+00a4	0302	// ¤ -> ◌̂
+00b5	0302	// µ -> ◌̂
+017f	0302	// ſ -> ◌̂
+UC_NBSP	L'^'	//   -> ^
+UC_NNBSP	L'^'	//   -> ^
+L' '	L'^'	//   -> ^
+
+DEADKEY L'`'
+
+L'A'	00c0	// A -> À
+L'E'	00c8	// E -> È
+L'I'	00cc	// I -> Ì
+L'N'	01f8	// N -> Ǹ
+L'O'	00d2	// O -> Ò
+L'U'	00d9	// U -> Ù
+L'W'	1e80	// W -> Ẁ
+L'Y'	1ef2	// Y -> Ỳ
+L'a'	00e0	// a -> à
+L'e'	00e8	// e -> è
+L'i'	00ec	// i -> ì
+L'n'	01f9	// n -> ǹ
+L'o'	00f2	// o -> ò
+L'u'	00f9	// u -> ù
+L'w'	1e81	// w -> ẁ
+L'y'	1ef3	// y -> ỳ
+00ca	1ec0	// Ê -> Ề
+00ea	1ec1	// ê -> ề
+
+00a4	0300	// ¤ -> ◌̀
+00b5	0300	// µ -> ◌̀
+017f	0300	// ſ -> ◌̀
+UC_NBSP	L'`'	//   -> `
+UC_NNBSP	L'`'	//   -> `
+L' '	L'`'	//   -> `
+
+DEADKEY L'~'
+
+L'-'	2243	// - -> ≃
+L'<'	2272	// < -> ≲
+L'='	2248	// = -> ≈
+L'>'	2273	// > -> ≳
+L'A'	00c3	// A -> Ã
+L'E'	1ebc	// E -> Ẽ
+L'I'	0128	// I -> Ĩ
+L'N'	00d1	// N -> Ñ
+L'O'	00d5	// O -> Õ
+L'U'	0168	// U -> Ũ
+L'V'	1e7c	// V -> Ṽ
+L'Y'	1ef8	// Y -> Ỹ
+L'a'	00e3	// a -> ã
+L'e'	1ebd	// e -> ẽ
+L'i'	0129	// i -> ĩ
+L'n'	00f1	// n -> ñ
+L'o'	00f5	// o -> õ
+L'u'	0169	// u -> ũ
+L'v'	1e7d	// v -> ṽ
+L'y'	1ef9	// y -> ỹ
+00ca	1ec4	// Ê -> Ễ
+00ea	1ec5	// ê -> ễ
+
+00a4	0303	// ¤ -> ◌̃
+00b5	0303	// µ -> ◌̃
+017f	0303	// ſ -> ◌̃
+UC_NBSP	L'~'	//   -> ~
+UC_NNBSP	L'~'	//   -> ~
+L' '	L'~'	//   -> ~
+
+DEADKEY 00a4
+
+L'%'	20b0	// % -> ₰
+L'A'	20b3	// A -> ₳
+L'B'	0e3f	// B -> ฿
+L'C'	20b5	// C -> ₵
+L'D'	20af	// D -> ₯
+L'F'	20a3	// F -> ₣
+L'L'	20a4	// L -> ₤
+L'M'	2133	// M -> ℳ
+L'P'	20a7	// P -> ₧
+L'R'	20b9	// R -> ₹
+L'S'	20b7	// S -> ₷
+L'T'	20ae	// T -> ₮
+L'b'	20bf	// b -> ₿
+L'c'	00a2	// c -> ¢
+L'd'	20ab	// d -> ₫
+L'e'	20a0	// e -> ₠
+L'f'	0192	// f -> ƒ
+L'g'	20b2	// g -> ₲
+L'h'	20b4	// h -> ₴
+L'k'	20ad	// k -> ₭
+L'l'	20ba	// l -> ₺
+L'm'	20a5	// m -> ₥
+L'n'	20a6	// n -> ₦
+L'p'	20b1	// p -> ₱
+L'r'	20bd	// r -> ₽
+L's'	20aa	// s -> ₪
+L't'	20b8	// t -> ₸
+L'w'	20a9	// w -> ₩
+L'y'	00a5	// y -> ¥
+L'|'	20be	// | -> ₾
+00ae	20a8	// ® -> ₨
+00c7	20a1	// Ç -> ₡
+00e7	20a2	// ç -> ₢
+221e	20bc	// ∞ -> ₼
+
+00b5	00a4	// µ -> ¤
+017f	00a4	// ſ -> ¤
+UC_NBSP	00a4	//   -> ¤
+UC_NNBSP	00a4	//   -> ¤
+L' '	00a4	//   -> ¤
+
+DEADKEY 00a8
+
+L'A'	00c4	// A -> Ä
+L'E'	00cb	// E -> Ë
+L'H'	1e26	// H -> Ḧ
+L'I'	00cf	// I -> Ï
+L'O'	00d6	// O -> Ö
+L'U'	00dc	// U -> Ü
+L'W'	1e84	// W -> Ẅ
+L'X'	1e8c	// X -> Ẍ
+L'Y'	0178	// Y -> Ÿ
+L'a'	00e4	// a -> ä
+L'e'	00eb	// e -> ë
+L'h'	1e27	// h -> ḧ
+L'i'	00ef	// i -> ï
+L'o'	00f6	// o -> ö
+L't'	1e97	// t -> ẗ
+L'u'	00fc	// u -> ü
+L'w'	1e85	// w -> ẅ
+L'x'	1e8d	// x -> ẍ
+L'y'	00ff	// y -> ÿ
+00d9	01db	// Ù -> Ǜ
+00f9	01dc	// ù -> ǜ
+
+00a4	0308	// ¤ -> ◌̈
+00b5	0308	// µ -> ◌̈
+017f	0308	// ſ -> ◌̈
+UC_NBSP	00a8	//   -> ¨
+UC_NNBSP	00a8	//   -> ¨
+L' '	00a8	//   -> ¨
+
+DEADKEY 00af
+
+L'A'	0100	// A -> Ā
+L'E'	0112	// E -> Ē
+L'G'	1e20	// G -> Ḡ
+L'I'	012a	// I -> Ī
+L'O'	014c	// O -> Ō
+L'U'	016a	// U -> Ū
+L'Y'	0232	// Y -> Ȳ
+L'a'	0101	// a -> ā
+L'e'	0113	// e -> ē
+L'g'	1e21	// g -> ḡ
+L'i'	012b	// i -> ī
+L'o'	014d	// o -> ō
+L'u'	016b	// u -> ū
+L'y'	0233	// y -> ȳ
+00c6	01e2	// Æ -> Ǣ
+00c8	1e14	// È -> Ḕ
+00c9	1e16	// É -> Ḗ
+00e6	01e3	// æ -> ǣ
+00e8	1e15	// è -> ḕ
+00e9	1e17	// é -> ḗ
+
+00a4	0304	// ¤ -> ◌̄
+00b5	0304	// µ -> ◌̄
+017f	0304	// ſ -> ◌̄
+UC_NBSP	00af	//   -> ¯
+UC_NNBSP	00af	//   -> ¯
+L' '	00af	//   -> ¯
+
+DEADKEY 0311
+
+L'A'	0202	// A -> Ȃ
+L'E'	0206	// E -> Ȇ
+L'I'	020a	// I -> Ȋ
+L'O'	020e	// O -> Ȏ
+L'R'	0212	// R -> Ȓ
+L'U'	0216	// U -> Ȗ
+L'a'	0203	// a -> ȃ
+L'e'	0207	// e -> ȇ
+L'i'	020b	// i -> ȋ
+L'o'	020f	// o -> ȏ
+L'r'	0213	// r -> ȓ
+L'u'	0217	// u -> ȗ
+00c0	1ea6	// À -> Ầ
+00c8	1ec0	// È -> Ề
+00e0	1ea7	// à -> ầ
+00e8	1ec1	// è -> ề
+
+00a4	0311	// ¤ -> ◌̑
+00b5	0311	// µ -> ◌̑
+017f	0311	// ſ -> ◌̑
+UC_NBSP	0311	//   -> ◌̑
+UC_NNBSP	0311	//   -> ◌̑
+L' '	0311	//   -> ◌̑
+
+DEADKEY 00b4
+
+L'A'	00c1	// A -> Á
+L'C'	0106	// C -> Ć
+L'E'	00c9	// E -> É
+L'G'	01f4	// G -> Ǵ
+L'I'	00cd	// I -> Í
+L'K'	1e30	// K -> Ḱ
+L'L'	0139	// L -> Ĺ
+L'M'	1e3e	// M -> Ḿ
+L'N'	0143	// N -> Ń
+L'O'	00d3	// O -> Ó
+L'P'	1e54	// P -> Ṕ
+L'R'	0154	// R -> Ŕ
+L'S'	015a	// S -> Ś
+L'U'	00da	// U -> Ú
+L'W'	1e82	// W -> Ẃ
+L'Y'	00dd	// Y -> Ý
+L'Z'	0179	// Z -> Ź
+L'a'	00e1	// a -> á
+L'c'	0107	// c -> ć
+L'e'	00e9	// e -> é
+L'g'	01f5	// g -> ǵ
+L'i'	00ed	// i -> í
+L'k'	1e31	// k -> ḱ
+L'l'	013a	// l -> ĺ
+L'm'	1e3f	// m -> ḿ
+L'n'	0144	// n -> ń
+L'o'	00f3	// o -> ó
+L'p'	1e55	// p -> ṕ
+L'r'	0155	// r -> ŕ
+L's'	015b	// s -> ś
+L'u'	00fa	// u -> ú
+L'w'	1e83	// w -> ẃ
+L'y'	00fd	// y -> ý
+L'z'	017a	// z -> ź
+00c6	01fc	// Æ -> Ǽ
+00c7	1e08	// Ç -> Ḉ
+00ca	1ebe	// Ê -> Ế
+00e6	01fd	// æ -> ǽ
+00e7	1e09	// ç -> ḉ
+00ea	1ebf	// ê -> ế
+
+00a4	0301	// ¤ -> ◌́
+00b5	0301	// µ -> ◌́
+017f	0301	// ſ -> ◌́
+UC_NBSP	00b4	//   -> ´
+UC_NNBSP	00b4	//   -> ´
+L' '	00b4	//   -> ´
+
+DEADKEY 00b5
+
+L'A'	0391	// A -> Α
+L'B'	0392	// B -> Β
+L'C'	03a8	// C -> Ψ
+L'D'	0394	// D -> Δ
+L'E'	0395	// E -> Ε
+L'F'	03a6	// F -> Φ
+L'G'	0393	// G -> Γ
+L'H'	0397	// H -> Η
+L'I'	0399	// I -> Ι
+L'J'	039e	// J -> Ξ
+L'K'	039a	// K -> Κ
+L'L'	039b	// L -> Λ
+L'M'	039c	// M -> Μ
+L'N'	039d	// N -> Ν
+L'O'	039f	// O -> Ο
+L'P'	03a0	// P -> Π
+L'R'	03a1	// R -> Ρ
+L'S'	03a3	// S -> Σ
+L'T'	03a4	// T -> Τ
+L'U'	0398	// U -> Θ
+L'V'	03a9	// V -> Ω
+L'X'	03a7	// X -> Χ
+L'Y'	03a5	// Y -> Υ
+L'Z'	0396	// Z -> Ζ
+L'a'	03b1	// a -> α
+L'b'	03b2	// b -> β
+L'c'	03c8	// c -> ψ
+L'd'	03b4	// d -> δ
+L'e'	03b5	// e -> ε
+L'f'	03c6	// f -> φ
+L'g'	03b3	// g -> γ
+L'h'	03b7	// h -> η
+L'i'	03b9	// i -> ι
+L'j'	03be	// j -> ξ
+L'k'	03ba	// k -> κ
+L'l'	03bb	// l -> λ
+L'm'	03bc	// m -> μ
+L'n'	03bd	// n -> ν
+L'o'	03bf	// o -> ο
+L'p'	03c0	// p -> π
+L'r'	03c1	// r -> ρ
+L's'	03c3	// s -> σ
+L't'	03c4	// t -> τ
+L'u'	03b8	// u -> θ
+L'v'	03c9	// v -> ω
+L'w'	03c2	// w -> ς
+L'x'	03c7	// x -> χ
+L'y'	03c5	// y -> υ
+L'z'	03b6	// z -> ζ
+
+00a4	00b5	// ¤ -> µ
+017f	00b5	// ſ -> µ
+UC_NBSP	00b5	//   -> µ
+UC_NNBSP	00b5	//   -> µ
+L' '	00b5	//   -> µ
+
+DEADKEY 00b8
+
+L'C'	00c7	// C -> Ç
+L'D'	1e10	// D -> Ḑ
+L'E'	0228	// E -> Ȩ
+L'G'	0122	// G -> Ģ
+L'H'	1e28	// H -> Ḩ
+L'K'	0136	// K -> Ķ
+L'L'	013b	// L -> Ļ
+L'N'	0145	// N -> Ņ
+L'R'	0156	// R -> Ŗ
+L'S'	015e	// S -> Ş
+L'T'	0162	// T -> Ţ
+L'c'	00e7	// c -> ç
+L'd'	1e11	// d -> ḑ
+L'e'	0229	// e -> ȩ
+L'g'	0123	// g -> ģ
+L'h'	1e29	// h -> ḩ
+L'k'	0137	// k -> ķ
+L'l'	013c	// l -> ļ
+L'n'	0146	// n -> ņ
+L'r'	0157	// r -> ŗ
+L's'	015f	// s -> ş
+L't'	0163	// t -> ţ
+
+00a4	0327	// ¤ -> ◌̧
+00b5	0327	// µ -> ◌̧
+017f	0327	// ſ -> ◌̧
+UC_NBSP	00b8	//   -> ¸
+UC_NNBSP	00b8	//   -> ¸
+L' '	00b8	//   -> ¸
+
+DEADKEY 017f
+
+L'\''	02bc	// ' -> ʼ
+L'0'	00ab	// 0 -> «
+L'7'	203a	// 7 -> ›
+L'8'	2039	// 8 -> ‹
+L'9'	00bb	// 9 -> »
+L'<'	2264	// < -> ≤
+L'>'	2265	// > -> ≥
+L'D'	00d0	// D -> Ð
+L'E'	018f	// E -> Ə
+L'G'	014a	// G -> Ŋ
+L'I'	0130	// I -> İ
+L'J'	0132	// J -> Ĳ
+L'T'	00de	// T -> Þ
+L'a'	00aa	// a -> ª
+L'd'	00f0	// d -> ð
+L'e'	0259	// e -> ə
+L'g'	014b	// g -> ŋ
+L'i'	0131	// i -> ı
+L'j'	0133	// j -> ĳ
+L'o'	00ba	// o -> º
+L's'	017f	// s -> ſ
+L't'	00fe	// t -> þ
+UC_NBSP	2003	//   ->  
+00ab	201e	// « -> „
+00bb	201f	// » -> ‟
+017f	0000	// ſ -> ␀
+2018	201a	// ‘ -> ‚
+2019	201b	// ’ -> ‛
+UC_NNBSP	2002	//   ->  
+00a4	0000	// ¤ -> ␀
+00b5	0000	// µ -> ␀
+UC_NBSP	0000	//   -> ␀
+UC_NNBSP	0000	//   -> ␀
+L' '	0000	//   -> ␀
+
+DEADKEY 02c7
+
+L'('	208d	// ( -> ₍
+L')'	208e	// ) -> ₎
+L'+'	208a	// + -> ₊
+L'-'	208b	// - -> ₋
+L'0'	2080	// 0 -> ₀
+L'1'	2081	// 1 -> ₁
+L'2'	2082	// 2 -> ₂
+L'3'	2083	// 3 -> ₃
+L'4'	2084	// 4 -> ₄
+L'5'	2085	// 5 -> ₅
+L'6'	2086	// 6 -> ₆
+L'7'	2087	// 7 -> ₇
+L'8'	2088	// 8 -> ₈
+L'9'	2089	// 9 -> ₉
+L'='	208c	// = -> ₌
+L'A'	01cd	// A -> Ǎ
+L'C'	010c	// C -> Č
+L'D'	010e	// D -> Ď
+L'E'	011a	// E -> Ě
+L'G'	01e6	// G -> Ǧ
+L'H'	021e	// H -> Ȟ
+L'I'	01cf	// I -> Ǐ
+L'K'	01e8	// K -> Ǩ
+L'L'	013d	// L -> Ľ
+L'N'	0147	// N -> Ň
+L'O'	01d1	// O -> Ǒ
+L'R'	0158	// R -> Ř
+L'S'	0160	// S -> Š
+L'T'	0164	// T -> Ť
+L'U'	01d3	// U -> Ǔ
+L'Z'	017d	// Z -> Ž
+L'a'	01ce	// a -> ǎ
+L'c'	010d	// c -> č
+L'd'	010f	// d -> ď
+L'e'	011b	// e -> ě
+L'g'	01e7	// g -> ǧ
+L'h'	021f	// h -> ȟ
+L'i'	01d0	// i -> ǐ
+L'j'	01f0	// j -> ǰ
+L'k'	01e9	// k -> ǩ
+L'l'	013e	// l -> ľ
+L'n'	0148	// n -> ň
+L'o'	01d2	// o -> ǒ
+L'r'	0159	// r -> ř
+L's'	0161	// s -> š
+L't'	0165	// t -> ť
+L'u'	01d4	// u -> ǔ
+L'x'	2093	// x -> ₓ
+L'z'	017e	// z -> ž
+01b7	01ee	// Ʒ -> Ǯ
+0292	01ef	// ʒ -> ǯ
+
+00a4	030c	// ¤ -> ◌̌
+00b5	030c	// µ -> ◌̌
+017f	030c	// ſ -> ◌̌
+UC_NBSP	02c7	//   -> ˇ
+UC_NNBSP	02c7	//   -> ˇ
+L' '	02c7	//   -> ˇ
+
+DEADKEY 02cd
+
+L'B'	1e06	// B -> Ḇ
+L'D'	1e0e	// D -> Ḏ
+L'K'	1e34	// K -> Ḵ
+L'L'	1e3a	// L -> Ḻ
+L'N'	1e48	// N -> Ṉ
+L'R'	1e5e	// R -> Ṟ
+L'T'	1e6e	// T -> Ṯ
+L'Z'	1e94	// Z -> Ẕ
+L'b'	1e07	// b -> ḇ
+L'd'	1e0f	// d -> ḏ
+L'h'	1e96	// h -> ẖ
+L'k'	1e35	// k -> ḵ
+L'l'	1e3b	// l -> ḻ
+L'n'	1e49	// n -> ṉ
+L'r'	1e5f	// r -> ṟ
+L't'	1e6f	// t -> ṯ
+L'z'	1e95	// z -> ẕ
+
+00a4	0331	// ¤ -> ◌̱
+00b5	0331	// µ -> ◌̱
+017f	0331	// ſ -> ◌̱
+UC_NBSP	02cd	//   -> ˍ
+UC_NNBSP	02cd	//   -> ˍ
+L' '	02cd	//   -> ˍ
+
+DEADKEY 02d8
+
+L'A'	0102	// A -> Ă
+L'E'	0114	// E -> Ĕ
+L'G'	011e	// G -> Ğ
+L'I'	012c	// I -> Ĭ
+L'O'	014e	// O -> Ŏ
+L'U'	016c	// U -> Ŭ
+L'a'	0103	// a -> ă
+L'e'	0115	// e -> ĕ
+L'g'	011f	// g -> ğ
+L'i'	012d	// i -> ĭ
+L'o'	014f	// o -> ŏ
+L'u'	016d	// u -> ŭ
+00c0	1eb0	// À -> Ằ
+00e0	1eb1	// à -> ằ
+
+00a4	0306	// ¤ -> ◌̆
+00b5	0306	// µ -> ◌̆
+017f	0306	// ſ -> ◌̆
+UC_NBSP	02d8	//   -> ˘
+UC_NNBSP	02d8	//   -> ˘
+L' '	02d8	//   -> ˘
+
+DEADKEY 02d9
+
+L'A'	0226	// A -> Ȧ
+L'B'	1e02	// B -> Ḃ
+L'C'	010a	// C -> Ċ
+L'D'	1e0a	// D -> Ḋ
+L'E'	0116	// E -> Ė
+L'F'	1e1e	// F -> Ḟ
+L'G'	0120	// G -> Ġ
+L'H'	1e22	// H -> Ḣ
+L'I'	0130	// I -> İ
+L'L'	013f	// L -> Ŀ
+L'M'	1e40	// M -> Ṁ
+L'N'	1e44	// N -> Ṅ
+L'O'	022e	// O -> Ȯ
+L'P'	1e56	// P -> Ṗ
+L'R'	1e58	// R -> Ṙ
+L'S'	1e60	// S -> Ṡ
+L'T'	1e6a	// T -> Ṫ
+L'W'	1e86	// W -> Ẇ
+L'X'	1e8a	// X -> Ẋ
+L'Y'	1e8e	// Y -> Ẏ
+L'Z'	017b	// Z -> Ż
+L'a'	0227	// a -> ȧ
+L'b'	1e03	// b -> ḃ
+L'c'	010b	// c -> ċ
+L'd'	1e0b	// d -> ḋ
+L'e'	0117	// e -> ė
+L'f'	1e1f	// f -> ḟ
+L'g'	0121	// g -> ġ
+L'h'	1e23	// h -> ḣ
+L'i'	0131	// i -> ı
+L'l'	0140	// l -> ŀ
+L'm'	1e41	// m -> ṁ
+L'n'	1e45	// n -> ṅ
+L'o'	022f	// o -> ȯ
+L'p'	1e57	// p -> ṗ
+L'r'	1e59	// r -> ṙ
+L's'	1e61	// s -> ṡ
+L't'	1e6b	// t -> ṫ
+L'w'	1e87	// w -> ẇ
+L'x'	1e8b	// x -> ẋ
+L'y'	1e8f	// y -> ẏ
+L'z'	017c	// z -> ż
+017f	1e9b	// ſ -> ẛ
+
+00a4	0307	// ¤ -> ◌̇
+00b5	0307	// µ -> ◌̇
+UC_NBSP	02d9	//   -> ˙
+UC_NNBSP	02d9	//   -> ˙
+L' '	02d9	//   -> ˙
+
+DEADKEY 02da
+
+L'A'	00c5	// A -> Å
+L'U'	016e	// U -> Ů
+L'a'	00e5	// a -> å
+L'u'	016f	// u -> ů
+L'w'	1e98	// w -> ẘ
+L'y'	1e99	// y -> ẙ
+
+00a4	030a	// ¤ -> ◌̊
+00b5	030a	// µ -> ◌̊
+017f	030a	// ſ -> ◌̊
+UC_NBSP	02da	//   -> ˚
+UC_NNBSP	02da	//   -> ˚
+L' '	02da	//   -> ˚
+
+DEADKEY 02db
+
+L'A'	0104	// A -> Ą
+L'E'	0118	// E -> Ę
+L'I'	012e	// I -> Į
+L'O'	01ea	// O -> Ǫ
+L'U'	0172	// U -> Ų
+L'a'	0105	// a -> ą
+L'e'	0119	// e -> ę
+L'i'	012f	// i -> į
+L'o'	01eb	// o -> ǫ
+L'u'	0173	// u -> ų
+
+00a4	0328	// ¤ -> ◌̨
+00b5	0328	// µ -> ◌̨
+017f	0328	// ſ -> ◌̨
+UC_NBSP	02db	//   -> ˛
+UC_NNBSP	02db	//   -> ˛
+L' '	02db	//   -> ˛
+
+DEADKEY 02dd
+
+L'O'	0150	// O -> Ő
+L'U'	0170	// U -> Ű
+L'o'	0151	// o -> ő
+L'u'	0171	// u -> ű
+
+00a4	030b	// ¤ -> ◌̋
+00b5	030b	// µ -> ◌̋
+017f	030b	// ſ -> ◌̋
+UC_NBSP	02dd	//   -> ˝
+UC_NNBSP	02dd	//   -> ˝
+L' '	02dd	//   -> ˝
+
+DEADKEY 02f5
+
+L'A'	0200	// A -> Ȁ
+L'E'	0204	// E -> Ȅ
+L'I'	0208	// I -> Ȉ
+L'O'	020c	// O -> Ȍ
+L'R'	0210	// R -> Ȑ
+L'U'	0214	// U -> Ȕ
+L'a'	0201	// a -> ȁ
+L'e'	0205	// e -> ȅ
+L'i'	0209	// i -> ȉ
+L'o'	020d	// o -> ȍ
+L'r'	0211	// r -> ȑ
+L'u'	0215	// u -> ȕ
+
+00a4	030f	// ¤ -> ◌̏
+00b5	030f	// µ -> ◌̏
+017f	030f	// ſ -> ◌̏
+UC_NBSP	02f5	//   -> ˵
+UC_NNBSP	02f5	//   -> ˵
+L' '	02f5	//   -> ˵
+
+
+KEYNAME
+
+01	"Échap."
+0e	"Ret.Arr."
+0f	"Tab"
+1c	"Entrée"
+1d	"Ctrl"
+2a	"Maj"
+36	"Maj Droite"
+37	"* (Pavé Num.)"
+38	"Alt"
+39	"Espace"
+3a	"Verr. Maj"
+3b	"F1"
+3c	"F2"
+3d	"F3"
+3e	"F4"
+3f	"F5"
+40	"F6"
+41	"F7"
+42	"F8"
+43	"F9"
+44	"F10"
+45	"Pause"
+46	"Défil."
+47	"7 (Pavé Num.)"
+48	"8 (Pavé Num.)"
+49	"9 (Pavé Num.)"
+4a	"- (Pavé Num.)"
+4b	"4 (Pavé Num.)"
+4c	"5 (Pavé Num.)"
+4d	"6 (Pavé Num.)"
+4e	"+ (Pavé Num.)"
+4f	"1 (Pavé Num.)"
+50	"2 (Pavé Num.)"
+51	"3 (Pavé Num.)"
+52	"0 (Pavé Num.)"
+53	". (Pavé Num.)"
+57	"F11"
+58	"F12"
+
+KEYNAME_EXT
+
+1c	"Entrée (Pavé Num.)"
+1d	"Ctrl Droite"
+35	"/ (Pavé Num.)"
+37	"Impr. Écran"
+38	"AltGr"
+45	"Verr. Num."
+46	"Attn."
+47	"Origine"
+48	"Haut"
+49	"Page Préc."
+4b	"Gauche"
+4d	"Droite"
+4f	"Fin"
+50	"Bas"
+51	"Page Suiv."
+52	"Insér."
+53	"Suppr."
+54	<00>
+56	"Aide"
+5b	"Windows Gauche"
+5c	"Windows Droite"
+5d	"Application"
+
+KEYNAME_DEAD
+
+0326	"COMMA BELOW"
+0335	"SHORT STROKE OVERLAY"
+0323	"DOT BELOW"
+0337	"SHORT SOLIDUS OVERLAY"
+^	"CIRCUMFLEX ACCENT"
+`	"GRAVE ACCENT"
+~	"TILDE"
+00a4	"CURRENCY SIGN"
+00a8	"DIAERESIS"
+00af	"MACRON"
+0311	"INVERTED BREVE"
+00b4	"ACUTE ACCENT"
+00b5	"MICRO SIGN"
+00b8	"CEDILLA"
+017f	"LATIN SMALL LETTER LONG S"
+02c7	"CARON"
+02cd	"MACRON BELOW"
+02d8	"BREVE"
+02d9	"DOT ABOVE"
+02da	"RING ABOVE"
+02db	"OGONEK"
+02dd	"DOUBLE ACUTE ACCENT"
+02f5	"DOUBLE GRAVE ACCENT"
+
+
+DESCRIPTIONS
+
+0409	French - AZERTY NF Z71-300
+040c	Français - AZERTY NF Z71-300
+
+LANGUAGENAMES
+
+0409	French (France)
+040c	Français
+
+ENDKBD
