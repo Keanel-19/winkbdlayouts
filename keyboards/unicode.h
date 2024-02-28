@@ -12,6 +12,7 @@
 #if !defined(UNICODE_H)
 #define UNICODE_H 1
 
+#define UC_NULL                0x0000
 #define UC_SOH                 0x0001
 #define UC_SOT                 0x0002
 #define UC_ETX                 0x0003
