@@ -23,71 +23,65 @@ SHIFTSTATE
 7	//Column 9 : Shft  Ctrl Alt
 
 LAYOUT		;an extra '@' at the end is a dead key
-// CAPLOK|CAPLOKALTGR = CAPLOK|CAPLOKALTGR
+// CLALT = CAPLOK|CAPLOKALTGR
 
 //SC	VK_		Cap		4		5		6		7		8		9
 //--	----	----	----	----	----	----	----	----
 
-//6
-02		'1'		SGCap	UC_LOWER_A_GRAVE	L'1'	WCH_NONE	WCH_NONE	UC_SECTION	UC_UPPER_A_GRAVE		// à 1   § À 
--1		_none_		0	UC_UPPER_A_GRAVE	L'1'	WCH_NONE	WCH_NONE	WCH_NONE		WCH_NONE			// À 1 
-03		'2'		SGCap	UC_LOWER_E_ACUTE	L'2'	WCH_NONE	WCH_NONE	UC_ACUTE@	UC_UPPER_E_ACUTE		// é 2   ´ É 
--1		_none_		0	UC_UPPER_E_ACUTE	L'2'	WCH_NONE	WCH_NONE	WCH_NONE		WCH_NONE			// É 2 
-04		'3'		SGCap	UC_LOWER_E_GRAVE	L'3'	WCH_NONE	WCH_NONE	L'`'@	UC_UPPER_E_GRAVE		// è 3   ` È 
--1		_none_		0	UC_UPPER_E_GRAVE	L'3'	WCH_NONE	WCH_NONE	WCH_NONE	WCH_NONE			// È 3 
-05		'4'		SGCap	UC_LOWER_E_CIRCUMFLEX	L'4'	WCH_NONE	WCH_NONE	L'^'@	UC_UPPER_E_CIRCUMFLEX		// ê 4   ^ Ê 
--1		_none_		0	UC_UPPER_E_CIRCUMFLEX	L'4'	WCH_NONE	WCH_NONE	WCH_NONE	WCH_NONE			// Ê 4 
-07		'6'		0		L'&'	L'6'	WCH_NONE	UC_US	UC_DOUBLE_ACUTE@	0x02f5@		// & 6   ˝ ˵ 
-0a		'9'		0		UC_DA_LEFT_QUOT	L'9'	WCH_NONE	UC_RS	UC_SA_LEFT_QUOT	UC_D_LEFT_QUOT		// « 9   ‹ “ 
-0b		'0'		0		UC_DA_RIGHT_QUOT	L'0'	UC_NULL	WCH_NONE	UC_SA_RIGHT_QUOT	UC_D_RIGHT_QUOT		// » 0   › ” 
-0c		OEM_4	0		L'\''	L'"'	WCH_NONE	WCH_NONE	UC_DEGREE	0x02da@		// ' "   ° ˚ 
-10		'A'		CAPLOK|CAPLOKALTGR	a		L'A'	WCH_NONE		WCH_NONE		UC_LOWER_AE	UC_UPPER_AE		// a A   æ Æ
-13		'R'		CAPLOK	r		L'R'	WCH_NONE		WCH_NONE		L'{'	UC_REGISTERED		// r R   { ® 
-14		'T'		CAPLOK	t		L'T'	WCH_NONE		WCH_NONE		L'}'	UC_TRADE		// t T   } ™ 
-16		'U'		CAPLOK|CAPLOKALTGR	u		L'U'	WCH_NONE		WCH_NONE		UC_LOWER_U_GRAVE	UC_UPPER_U_GRAVE		// u U   ù Ù 
-17		'I'		CAPLOK	i		L'I'	WCH_NONE		WCH_NONE		UC_DOT_ABOVE@	UC_COMB_DOT_BELOW@		// i I   ˙ ◌̣ 
-18		'O'		CAPLOK|CAPLOKALTGR	o		L'O'	WCH_NONE		WCH_NONE		UC_LOWER_OE	UC_UPPER_OE		// o O   œ Œ 
-19		'P'		CAPLOK	p		L'P'	WCH_NONE		WCH_NONE		L'%'	UC_PER_MILLE		// p P   % ‰ 
-1a		OEM_MINUS	0		L'-'	UC_EN_DASH	WCH_NONE		WCH_NONE		UC_MINUS	0x2011		// - –   − ‑ 
-1b		OEM_PLUS	0		L'+'	UC_PLUS_MINUS	WCH_NONE		WCH_NONE		UC_DAGGER	UC_D_DAGGER		// + ±   † ‡ 
-1e		'Q'		CAPLOK|CAPLOKALTGR	q		L'Q'	WCH_NONE		WCH_NONE		UC_LOWER_THETA	0x03f4		// q Q   θ ϴ  
-1f		'S'		CAPLOK|CAPLOKALTGR	s		L'S'	WCH_NONE		WCH_NONE		UC_LOWER_SHARP_S	0x1e9e		// s S   ß ẞ
-21		'F'		CAPLOK	f		L'F'	WCH_NONE		WCH_NONE		L'('	L'['		// f F   ( [ 
-22		'G'		CAPLOK	g		L'G'	WCH_NONE		WCH_NONE		L')'	L']'		// g G   ) ] 
-28		OEM_3	0		L'/'	L'\\'	WCH_NONE		WCH_NONE		UC_DIVISION	UC_SQUARE_ROOT		// / \   ÷ √ 
-29		OEM_7	0		L'@'	L'#'	WCH_NONE		WCH_NONE		UC_BREVE@	UC_COMB_INV_BREVE@		// @ #   ˘ ◌̑ 
-2b		OEM_5	0		L'*'	UC_FRAC_1_2	UC_FS	WCH_NONE		UC_MULTIPLICATION	UC_FRAC_1_4		// * ½   × ¼ 
-56		OEM_102	0		L'<'	L'>'	UC_FS	WCH_NONE		0x2a7d	0x2a7e		// < >   ⩽ ⩾ 
-2c		'W'		CAPLOK|CAPLOKALTGR	w		L'W'	WCH_NONE		WCH_NONE		0x0292	0x01b7		// w W   ʒ Ʒ 
-2e		'C'		CAPLOK|CAPLOKALTGR	c		L'C'	WCH_NONE		WCH_NONE		UC_LOWER_C_CEDILLA	UC_UPPER_C_CEDILLA		// c C   ç Ç 
-2f		'V'		CAPLOK	v		L'V'	WCH_NONE		WCH_NONE		UC_CEDILLA@	UC_OGONEK@		// v V   ¸ ˛ 
-33		OEM_COMMA	0		L','	L'!'	WCH_NONE		WCH_NONE		UC_INV_EXCL	UC_COMB_COMMA_BELOW@		// , !   ¡ ◌̦ 
-35		OEM_8	0		L';'	L'='	UC_GS	WCH_NONE		0x2243	UC_NOT_EQUAL		// ; =   ≃ ≠ 
-39		SPACE	0		L' '	L'_'	L' '	WCH_NONE		UC_NBSP	UC_NNBSP	//   _       
+02		1		SGCap	0x00e0	L'1'	-1		-1		0x00a7	0x00c0		// à 1   § À 
+-1		-1		0		0x00c0	L'1'	-1		-1		-1		-1			// À 1 
+03		2		SGCap	0x00e9	L'2'	-1		-1		0x00b4@	0x00c9		// é 2   ´ É 
+-1		-1		0		0x00c9	L'2'	-1		-1		-1		-1			// É 2 
+04		3		SGCap	0x00e8	L'3'	-1		-1		L'`'@	0x00c8		// è 3   ` È 
+-1		-1		0		0x00c8	L'3'	-1		-1		-1		-1			// È 3 
+05		4		SGCap	0x00ea	L'4'	-1		-1		L'^'@	0x00ca		// ê 4   ^ Ê 
+-1		-1		0		0x00ca	L'4'	-1		-1		-1		-1			// Ê 4 
+06		5		0		0x00a8@	L'5'	-1		UC_ESC	0x02c7@	-1			// ¨ 5   ˇ   
+07		6		0		L'&'	L'6'	-1		UC_US	0x02dd@	0x02f5@		// & 6   ˝ ˵ 
+08		7		0		0x2018	L'7'	-1		-1		0x00af@	-1			// ‘ 7   ¯   
+09		8		0		0x2019	L'8'	-1		UC_FS	0x2014	-1			// ’ 8   —   
+0a		9		0		0x00ab	L'9'	-1		UC_RS	0x2039	0x201c		// « 9   ‹ “ 
+0b		0		0		0x00bb	L'0'	0x0000	-1		0x203a	0x201d		// » 0   › ” 
+0c		OEM_4	0		L'\''	L'"'	-1		-1		0x00b0	0x02da@		// ' "   ° ˚ 
+0d		OEM_6	0		0x017f@	0x00a4@	UC_ESC	-1		0x00b5@	-1			// ſ ¤   µ   
 
-//5
-06		'5'		0		UC_DIAERESIS@	L'5'	WCH_NONE	UC_ESC	UC_CARON@	WCH_NONE			// ¨ 5   ˇ   
-09		'8'		0		UC_S_RIGHT_QUOT	L'8'	WCH_NONE	UC_FS	UC_EM_DASH	WCH_NONE			// ’ 8   —   
-
-//4
-08		'7'		0		UC_S_LEFT_QUOT	L'7'	WCH_NONE	WCH_NONE	UC_MACRON@	WCH_NONE			// ‘ 7   ¯   
-0d		OEM_6	0		0x017f@	UC_CURRENCY@	UC_ESC	WCH_NONE	UC_MICRO@	WCH_NONE		// ſ ¤   µ   
-11		'Z'		CAPLOK	z		L'Z'	WCH_NONE		WCH_NONE		UC_POUND	WCH_NONE			// z Z   £   
-12		'E'		CAPLOK	e		L'E'	WCH_NONE		WCH_NONE		UC_EURO	WCH_NONE			// e E   €   
-20		'D'		CAPLOK	d		L'D'	WCH_NONE		WCH_NONE		L'$'	WCH_NONE			// d D   $   
-23		'H'		CAPLOK	h		L'H'	WCH_NONE		WCH_NONE		0x02cd@	WCH_NONE			// h H   ˍ   
-25		'K'		CAPLOK	k		L'K'	WCH_NONE		WCH_NONE		UC_COMB_SHORT_SOLIDUS_OVERLAY@	WCH_NONE			// k K   ◌̷   
-26		'L'		CAPLOK	l		L'L'	WCH_NONE		WCH_NONE		L'|'	WCH_NONE			// l L   |   
-27		'M'		CAPLOK	m		L'M'	WCH_NONE		WCH_NONE		UC_INFINITY	WCH_NONE			// m M   ∞   
-2d		'X'		CAPLOK	x		L'X'	WCH_NONE		WCH_NONE		UC_COPYRIGHT	WCH_NONE			// x X   ©   
-30		'B'		CAPLOK	b		L'B'	WCH_NONE		WCH_NONE		UC_COMB_SHORT_STROKE_OVERLAY@	WCH_NONE			// b B   ◌̵   
-31		'N'		CAPLOK	n		L'N'	WCH_NONE		WCH_NONE		L'~'@	WCH_NONE			// n N   ~   
-32		OEM_PERIOD	0		L'.'	L'?'	WCH_NONE		WCH_NONE		UC_INV_QUESTION	WCH_NONE			// . ?   ¿   
-34		OEM_2	0		L':'	UC_ELLIPSIS	WCH_NONE		WCH_NONE		UC_MIDDOT	WCH_NONE			// : …   ·   
-
-//2
-15		'Y'		CAPLOK	y		L'Y'	WCH_NONE		WCH_NONE		WCH_NONE		WCH_NONE			// y Y       
-24		'J'		CAPLOK	j		L'J'	WCH_NONE		WCH_NONE		WCH_NONE		WCH_NONE			// j J       
+10		A		CLALT	a		L'A'	-1		-1		0x00e6	0x00c6		// a A   æ Æ
+11		Z		CAPLOK	z		L'Z'	-1		-1		0x00a3	-1			// z Z   £   
+12		E		CAPLOK	e		L'E'	-1		-1		0x20ac	-1			// e E   €   
+13		R		CAPLOK	r		L'R'	-1		-1		L'{'	0x00ae		// r R   { ® 
+14		T		CAPLOK	t		L'T'	-1		-1		L'}'	0x2122		// t T   } ™ 
+15		Y		CAPLOK	y		L'Y'	-1		-1		-1		-1			// y Y       
+16		U		CLALT	u		L'U'	-1		-1		0x00f9	0x00d9		// u U   ù Ù 
+17		I		CAPLOK	i		L'I'	-1		-1		0x02d9@	0x0323@		// i I   ˙ ◌̣ 
+18		O		CLALT	o		L'O'	-1		-1		0x0153	0x0152		// o O   œ Œ 
+19		P		CAPLOK	p		L'P'	-1		-1		L'%'	0x2030		// p P   % ‰ 
+1a	OEM_MINUS	0		L'-'	0x2013	-1		-1		0x2212	0x2011		// - –   − ‑ 
+1b	OEM_PLUS	0		L'+'	0x00b1	-1		-1		0x2020	0x2021		// + ±   † ‡ 
+1e		Q		CLALT	q		L'Q'	-1		-1		0x03b8	0x03f4		// q Q   θ ϴ  
+1f		S		CLALT	s		L'S'	-1		-1		0x00df	0x1e9e		// s S   ß ẞ
+20		D		CAPLOK	d		L'D'	-1		-1		L'$'	-1			// d D   $   
+21		F		CAPLOK	f		L'F'	-1		-1		L'('	L'['		// f F   ( [ 
+22		G		CAPLOK	g		L'G'	-1		-1		L')'	L']'		// g G   ) ] 
+23		H		CAPLOK	h		L'H'	-1		-1		0x02cd@	-1			// h H   ˍ   
+24		J		CAPLOK	j		L'J'	-1		-1		-1		-1			// j J       
+25		K		CAPLOK	k		L'K'	-1		-1		0x0337@	-1			// k K   ◌̷   
+26		L		CAPLOK	l		L'L'	-1		-1		L'|'	-1			// l L   |   
+27		M		CAPLOK	m		L'M'	-1		-1		0x221e	-1			// m M   ∞   
+28		OEM_3	0		L'/'	L'\'	-1		-1		0x00f7	0x221a		// / \   ÷ √ 
+29		OEM_7	0		L'@'	L'#'	-1		-1		0x02d8@	0x0311@		// @ #   ˘ ◌̑ 
+2b		OEM_5	0		L'*'	0x00bd	UC_FS	-1		0x00d7	0x00bc		// * ½   × ¼ 
+56		OEM_102	0		L'<'	L'>'	UC_FS	-1		0x2a7d	0x2a7e		// < >   ⩽ ⩾ 
+2c		W		CLALT	w		L'W'	-1		-1		0x0292	0x01b7		// w W   ʒ Ʒ 
+2d		X		CAPLOK	x		L'X'	-1		-1		0x00a9	-1			// x X   ©   
+2e		C		CLALT	c		L'C'	-1		-1		0x00e7	0x00c7		// c C   ç Ç 
+2f		V		CAPLOK	v		L'V'	-1		-1		0x00b8@	0x02db@		// v V   ¸ ˛ 
+30		B		CAPLOK	b		L'B'	-1		-1		0x0335@	-1			// b B   ◌̵   
+31		N		CAPLOK	n		L'N'	-1		-1		L'~'@	-1			// n N   ~   
+32	OEM_PERIOD	0		L'.'	L'?'	-1		-1		0x00bf	-1			// . ?   ¿   
+33	OEM_COMMA	0		L','	L'!'	-1		-1		0x00a1	0x0326@		// , !   ¡ ◌̦ 
+34		OEM_2	0		L':'	0x2026	-1		-1		0x00b7	-1			// : …   ·   
+35		OEM_8	0		L';'	L'='	UC_GS	-1		0x2243	0x2260		// ; =   ≃ ≠ 
+39		SPACE	0		L' '	L'_'	L' '	-1		UC_NBSP	UC_NNBSP	//   _       
 
 // The following three keys are specifically set last in the layout
 // to prevent the Win32 VkKeyScanEx function to report an incorrect
@@ -96,53 +90,53 @@ LAYOUT		;an extra '@' at the end is a dead key
 // See https://github.com/springcomp/optimized-azerty-win/issues/73.
 
 
-DEADKEY UC_COMB_COMMA_BELOW
+DEADKEY 0x0326
 
-L'S'	UC_UPPER_S_COMMA_BELOW	// S -> Ș
-L'T'	UC_UPPER_T_COMMA_BELOW	// T -> Ț
-L's'	UC_LOWER_S_COMMA_BELOW	// s -> ș
-L't'	UC_LOWER_T_COMMA_BELOW	// t -> ț
+L'S'	0x0218	// S -> Ș
+L'T'	0x021a	// T -> Ț
+L's'	0x0219	// s -> ș
+L't'	0x021b	// t -> ț
 
-UC_CURRENCY	UC_COMB_COMMA_BELOW	// ¤ -> ◌̦
-UC_MICRO	UC_COMB_COMMA_BELOW	// µ -> ◌̦
-0x017f	UC_COMB_COMMA_BELOW	// ſ -> ◌̦
-UC_NBSP	UC_COMB_COMMA_BELOW	//   -> ◌̦
-UC_NNBSP	UC_COMB_COMMA_BELOW	//   -> ◌̦
-L' '	UC_COMB_COMMA_BELOW	//   -> ◌̦
+0x00a4	0x0326	// ¤ -> ◌̦
+0x00b5	0x0326	// µ -> ◌̦
+0x017f	0x0326	// ſ -> ◌̦
+UC_NBSP	0x0326	//   -> ◌̦
+UC_NNBSP	0x0326	//   -> ◌̦
+L' '	0x0326	//   -> ◌̦
 
-DEADKEY UC_COMB_SHORT_STROKE_OVERLAY
+DEADKEY 0x0335
 
 L'B'	0x0243	// B -> Ƀ
-L'D'	UC_UPPER_D_STROKE	// D -> Đ
+L'D'	0x0110	// D -> Đ
 L'G'	0x01e4	// G -> Ǥ
-L'H'	UC_UPPER_H_STROKE	// H -> Ħ
+L'H'	0x0126	// H -> Ħ
 L'I'	0x0197	// I -> Ɨ
 L'J'	0x0248	// J -> Ɉ
 L'L'	0x023d	// L -> Ƚ
 L'R'	0x024c	// R -> Ɍ
-L'T'	UC_UPPER_T_STROKE	// T -> Ŧ
+L'T'	0x0166	// T -> Ŧ
 L'U'	0x0244	// U -> Ʉ
 L'Y'	0x024e	// Y -> Ɏ
 L'Z'	0x01b5	// Z -> Ƶ
 L'b'	0x0180	// b -> ƀ
-L'd'	UC_LOWER_D_STROKE	// d -> đ
+L'd'	0x0111	// d -> đ
 L'g'	0x01e5	// g -> ǥ
-L'h'	UC_LOWER_H_STROKE	// h -> ħ
+L'h'	0x0127	// h -> ħ
 L'j'	0x0249	// j -> ɉ
 L'l'	0x019a	// l -> ƚ
 L'r'	0x024d	// r -> ɍ
-L't'	UC_LOWER_T_STROKE	// t -> ŧ
+L't'	0x0167	// t -> ŧ
 L'y'	0x024f	// y -> ɏ
 L'z'	0x01b6	// z -> ƶ
 
-UC_CURRENCY	UC_COMB_SHORT_STROKE_OVERLAY	// ¤ -> ◌̵
-UC_MICRO	UC_COMB_SHORT_STROKE_OVERLAY	// µ -> ◌̵
-0x017f	UC_COMB_SHORT_STROKE_OVERLAY	// ſ -> ◌̵
-UC_NBSP	UC_COMB_SHORT_STROKE_OVERLAY	//   -> ◌̵
-UC_NNBSP	UC_COMB_SHORT_STROKE_OVERLAY	//   -> ◌̵
-L' '	UC_COMB_SHORT_STROKE_OVERLAY	//   -> ◌̵
+0x00a4	0x0335	// ¤ -> ◌̵
+0x00b5	0x0335	// µ -> ◌̵
+0x017f	0x0335	// ſ -> ◌̵
+UC_NBSP	0x0335	//   -> ◌̵
+UC_NNBSP	0x0335	//   -> ◌̵
+L' '	0x0335	//   -> ◌̵
 
-DEADKEY UC_COMB_DOT_BELOW
+DEADKEY 0x0323
 
 L'A'	0x1ea0	// A -> Ạ
 L'B'	0x1e04	// B -> Ḅ
@@ -182,41 +176,41 @@ L'v'	0x1e7f	// v -> ṿ
 L'w'	0x1e89	// w -> ẉ
 L'y'	0x1ef5	// y -> ỵ
 L'z'	0x1e93	// z -> ẓ
-UC_UPPER_E_CIRCUMFLEX	0x1ec6	// Ê -> Ệ
-UC_LOWER_E_CIRCUMFLEX	0x1ec7	// ê -> ệ
+0x00ca	0x1ec6	// Ê -> Ệ
+0x00ea	0x1ec7	// ê -> ệ
 
-UC_CURRENCY	UC_COMB_DOT_BELOW	// ¤ -> ◌̣
-UC_MICRO	UC_COMB_DOT_BELOW	// µ -> ◌̣
-0x017f	UC_COMB_DOT_BELOW	// ſ -> ◌̣
-UC_NBSP	UC_COMB_DOT_BELOW	//   -> ◌̣
-UC_NNBSP	UC_COMB_DOT_BELOW	//   -> ◌̣
-L' '	UC_COMB_DOT_BELOW	//   -> ◌̣
+0x00a4	0x0323	// ¤ -> ◌̣
+0x00b5	0x0323	// µ -> ◌̣
+0x017f	0x0323	// ſ -> ◌̣
+UC_NBSP	0x0323	//   -> ◌̣
+UC_NNBSP	0x0323	//   -> ◌̣
+L' '	0x0323	//   -> ◌̣
 
-DEADKEY UC_COMB_SHORT_SOLIDUS_OVERLAY
+DEADKEY 0x0337
 
 L'<'	0x226e	// < -> ≮
-L'='	UC_NOT_EQUAL	// = -> ≠
+L'='	0x2260	// = -> ≠
 L'>'	0x226f	// > -> ≯
 L'A'	0x023a	// A -> Ⱥ
 L'C'	0x023b	// C -> Ȼ
 L'E'	0x0246	// E -> Ɇ
-L'L'	UC_UPPER_L_STROKE	// L -> Ł
-L'O'	UC_UPPER_O_STROKE	// O -> Ø
+L'L'	0x0141	// L -> Ł
+L'O'	0x00d8	// O -> Ø
 L'T'	0x023e	// T -> Ⱦ
 L'c'	0x023c	// c -> ȼ
 L'e'	0x0247	// e -> ɇ
-L'l'	UC_LOWER_L_STROKE	// l -> ł
-L'o'	UC_LOWER_O_STROKE	// o -> ø
+L'l'	0x0142	// l -> ł
+L'o'	0x00f8	// o -> ø
 0x017f	0x1e9c	// ſ -> ẜ
 0x2243	0x2244	// ≃ -> ≄
 0x2a7d	0x2270	// ⩽ -> ≰
 0x2a7e	0x2271	// ⩾ -> ≱
 
-UC_CURRENCY	UC_COMB_SHORT_SOLIDUS_OVERLAY	// ¤ -> ◌̷
-UC_MICRO	UC_COMB_SHORT_SOLIDUS_OVERLAY	// µ -> ◌̷
-UC_NBSP	UC_COMB_SHORT_SOLIDUS_OVERLAY	//   -> ◌̷
-UC_NNBSP	UC_COMB_SHORT_SOLIDUS_OVERLAY	//   -> ◌̷
-L' '	UC_COMB_SHORT_SOLIDUS_OVERLAY	//   -> ◌̷
+0x00a4	0x0337	// ¤ -> ◌̷
+0x00b5	0x0337	// µ -> ◌̷
+UC_NBSP	0x0337	//   -> ◌̷
+UC_NNBSP	0x0337	//   -> ◌̷
+L' '	0x0337	//   -> ◌̷
 
 DEADKEY L'^'
 
@@ -225,9 +219,9 @@ L')'	0x207e	// ) -> ⁾
 L'+'	0x207a	// + -> ⁺
 L'-'	0x207b	// - -> ⁻
 L'0'	0x2070	// 0 -> ⁰
-L'1'	UC_SUP1	// 1 -> ¹
-L'2'	UC_SUP2	// 2 -> ²
-L'3'	UC_SUP3	// 3 -> ³
+L'1'	0x00b9	// 1 -> ¹
+L'2'	0x00b2	// 2 -> ²
+L'3'	0x00b3	// 3 -> ³
 L'4'	0x2074	// 4 -> ⁴
 L'5'	0x2075	// 5 -> ⁵
 L'6'	0x2076	// 6 -> ⁶
@@ -235,72 +229,72 @@ L'7'	0x2077	// 7 -> ⁷
 L'8'	0x2078	// 8 -> ⁸
 L'9'	0x2079	// 9 -> ⁹
 L'='	0x207c	// = -> ⁼
-L'A'	UC_UPPER_A_CIRCUMFLEX	// A -> Â
-L'C'	UC_UPPER_C_CIRCUMFLEX	// C -> Ĉ
-L'E'	UC_UPPER_E_CIRCUMFLEX	// E -> Ê
-L'G'	UC_UPPER_G_CIRCUMFLEX	// G -> Ĝ
-L'H'	UC_UPPER_H_CIRCUMFLEX	// H -> Ĥ
-L'I'	UC_UPPER_I_CIRCUMFLEX	// I -> Î
-L'J'	UC_UPPER_J_CIRCUMFLEX	// J -> Ĵ
-L'O'	UC_UPPER_O_CIRCUMFLEX	// O -> Ô
-L'S'	UC_UPPER_S_CIRCUMFLEX	// S -> Ŝ
-L'U'	UC_UPPER_U_CIRCUMFLEX	// U -> Û
-L'W'	UC_UPPER_W_CIRCUMFLEX	// W -> Ŵ
-L'Y'	UC_UPPER_Y_CIRCUMFLEX	// Y -> Ŷ
+L'A'	0x00c2	// A -> Â
+L'C'	0x0108	// C -> Ĉ
+L'E'	0x00ca	// E -> Ê
+L'G'	0x011c	// G -> Ĝ
+L'H'	0x0124	// H -> Ĥ
+L'I'	0x00ce	// I -> Î
+L'J'	0x0134	// J -> Ĵ
+L'O'	0x00d4	// O -> Ô
+L'S'	0x015c	// S -> Ŝ
+L'U'	0x00db	// U -> Û
+L'W'	0x0174	// W -> Ŵ
+L'Y'	0x0176	// Y -> Ŷ
 L'Z'	0x1e90	// Z -> Ẑ
-L'a'	UC_LOWER_A_CIRCUMFLEX	// a -> â
-L'c'	UC_LOWER_C_CIRCUMFLEX	// c -> ĉ
-L'e'	UC_LOWER_E_CIRCUMFLEX	// e -> ê
-L'g'	UC_LOWER_G_CIRCUMFLEX	// g -> ĝ
-L'h'	UC_LOWER_H_CIRCUMFLEX	// h -> ĥ
-L'i'	UC_LOWER_I_CIRCUMFLEX	// i -> î
-L'j'	UC_LOWER_J_CIRCUMFLEX	// j -> ĵ
-L'o'	UC_LOWER_O_CIRCUMFLEX	// o -> ô
-L's'	UC_LOWER_S_CIRCUMFLEX	// s -> ŝ
-L'u'	UC_LOWER_U_CIRCUMFLEX	// u -> û
-L'w'	UC_LOWER_W_CIRCUMFLEX	// w -> ŵ
+L'a'	0x00e2	// a -> â
+L'c'	0x0109	// c -> ĉ
+L'e'	0x00ea	// e -> ê
+L'g'	0x011d	// g -> ĝ
+L'h'	0x0125	// h -> ĥ
+L'i'	0x00ee	// i -> î
+L'j'	0x0135	// j -> ĵ
+L'o'	0x00f4	// o -> ô
+L's'	0x015d	// s -> ŝ
+L'u'	0x00fb	// u -> û
+L'w'	0x0175	// w -> ŵ
 L'x'	0x02e3	// x -> ˣ
-L'y'	UC_LOWER_Y_CIRCUMFLEX	// y -> ŷ
+L'y'	0x0177	// y -> ŷ
 L'z'	0x1e91	// z -> ẑ
-UC_UPPER_A_GRAVE	0x1ea6	// À -> Ầ
-UC_UPPER_E_GRAVE	0x1ec0	// È -> Ề
-UC_UPPER_E_ACUTE	0x1ebe	// É -> Ế
-UC_LOWER_A_GRAVE	0x1ea7	// à -> ầ
-UC_LOWER_E_GRAVE	0x1ec1	// è -> ề
-UC_LOWER_E_ACUTE	0x1ebf	// é -> ế
-UC_MINUS	0x207b	// − -> ⁻
+0x00c0	0x1ea6	// À -> Ầ
+0x00c8	0x1ec0	// È -> Ề
+0x00c9	0x1ebe	// É -> Ế
+0x00e0	0x1ea7	// à -> ầ
+0x00e8	0x1ec1	// è -> ề
+0x00e9	0x1ebf	// é -> ế
+0x2212	0x207b	// − -> ⁻
 
-UC_CURRENCY	UC_COMB_CIRCUMFLEX	// ¤ -> ◌̂
-UC_MICRO	UC_COMB_CIRCUMFLEX	// µ -> ◌̂
-0x017f	UC_COMB_CIRCUMFLEX	// ſ -> ◌̂
+0x00a4	0x0302	// ¤ -> ◌̂
+0x00b5	0x0302	// µ -> ◌̂
+0x017f	0x0302	// ſ -> ◌̂
 UC_NBSP	L'^'	//   -> ^
 UC_NNBSP	L'^'	//   -> ^
 L' '	L'^'	//   -> ^
 
 DEADKEY L'`'
 
-L'A'	UC_UPPER_A_GRAVE	// A -> À
-L'E'	UC_UPPER_E_GRAVE	// E -> È
-L'I'	UC_UPPER_I_GRAVE	// I -> Ì
+L'A'	0x00c0	// A -> À
+L'E'	0x00c8	// E -> È
+L'I'	0x00cc	// I -> Ì
 L'N'	0x01f8	// N -> Ǹ
-L'O'	UC_UPPER_O_GRAVE	// O -> Ò
-L'U'	UC_UPPER_U_GRAVE	// U -> Ù
-L'W'	UC_UPPER_W_GRAVE	// W -> Ẁ
-L'Y'	UC_UPPER_Y_GRAVE	// Y -> Ỳ
-L'a'	UC_LOWER_A_GRAVE	// a -> à
-L'e'	UC_LOWER_E_GRAVE	// e -> è
-L'i'	UC_LOWER_I_GRAVE	// i -> ì
+L'O'	0x00d2	// O -> Ò
+L'U'	0x00d9	// U -> Ù
+L'W'	0x1e80	// W -> Ẁ
+L'Y'	0x1ef2	// Y -> Ỳ
+L'a'	0x00e0	// a -> à
+L'e'	0x00e8	// e -> è
+L'i'	0x00ec	// i -> ì
 L'n'	0x01f9	// n -> ǹ
-L'o'	UC_LOWER_O_GRAVE	// o -> ò
-L'u'	UC_LOWER_U_GRAVE	// u -> ù
-L'w'	UC_LOWER_W_GRAVE	// w -> ẁ
-L'y'	UC_LOWER_Y_GRAVE	// y -> ỳ
-UC_UPPER_E_CIRCUMFLEX	0x1ec0	// Ê -> Ề
-UC_LOWER_E_CIRCUMFLEX	0x1ec1	// ê -> ề
+L'o'	0x00f2	// o -> ò
+L'u'	0x00f9	// u -> ù
+L'w'	0x1e81	// w -> ẁ
+L'y'	0x1ef3	// y -> ỳ
+0x00ca	0x1ec0	// Ê -> Ề
+0x00ea	0x1ec1	// ê -> ề
 
-UC_CURRENCY	UC_COMB_GRAVE	// ¤ -> ◌̀
-UC_MICRO	UC_COMB_GRAVE	// µ -> ◌̀
-0x017f	UC_COMB_GRAVE	// ſ -> ◌̀
+0x00a4	0x0300	// ¤ -> ◌̀
+0x00b5	0x0300	// µ -> ◌̀
+0x017f	0x0300	// ſ -> ◌̀
 UC_NBSP	L'`'	//   -> `
 UC_NNBSP	L'`'	//   -> `
 L' '	L'`'	//   -> `
@@ -309,41 +303,41 @@ DEADKEY L'~'
 
 L'-'	0x2243	// - -> ≃
 L'<'	0x2272	// < -> ≲
-L'='	UC_ALMOST_EQUAL	// = -> ≈
+L'='	0x2248	// = -> ≈
 L'>'	0x2273	// > -> ≳
-L'A'	UC_UPPER_A_TILDE	// A -> Ã
+L'A'	0x00c3	// A -> Ã
 L'E'	0x1ebc	// E -> Ẽ
-L'I'	UC_UPPER_I_TILDE	// I -> Ĩ
-L'N'	UC_UPPER_N_TILDE	// N -> Ñ
-L'O'	UC_UPPER_O_TILDE	// O -> Õ
-L'U'	UC_UPPER_U_TILDE	// U -> Ũ
+L'I'	0x0128	// I -> Ĩ
+L'N'	0x00d1	// N -> Ñ
+L'O'	0x00d5	// O -> Õ
+L'U'	0x0168	// U -> Ũ
 L'V'	0x1e7c	// V -> Ṽ
 L'Y'	0x1ef8	// Y -> Ỹ
-L'a'	UC_LOWER_A_TILDE	// a -> ã
+L'a'	0x00e3	// a -> ã
 L'e'	0x1ebd	// e -> ẽ
-L'i'	UC_LOWER_I_TILDE	// i -> ĩ
-L'n'	UC_LOWER_N_TILDE	// n -> ñ
-L'o'	UC_LOWER_O_TILDE	// o -> õ
-L'u'	UC_LOWER_U_TILDE	// u -> ũ
+L'i'	0x0129	// i -> ĩ
+L'n'	0x00f1	// n -> ñ
+L'o'	0x00f5	// o -> õ
+L'u'	0x0169	// u -> ũ
 L'v'	0x1e7d	// v -> ṽ
 L'y'	0x1ef9	// y -> ỹ
-UC_UPPER_E_CIRCUMFLEX	0x1ec4	// Ê -> Ễ
-UC_LOWER_E_CIRCUMFLEX	0x1ec5	// ê -> ễ
+0x00ca	0x1ec4	// Ê -> Ễ
+0x00ea	0x1ec5	// ê -> ễ
 
-UC_CURRENCY	UC_COMB_TILDE	// ¤ -> ◌̃
-UC_MICRO	UC_COMB_TILDE	// µ -> ◌̃
-0x017f	UC_COMB_TILDE	// ſ -> ◌̃
+0x00a4	0x0303	// ¤ -> ◌̃
+0x00b5	0x0303	// µ -> ◌̃
+0x017f	0x0303	// ſ -> ◌̃
 UC_NBSP	L'~'	//   -> ~
 UC_NNBSP	L'~'	//   -> ~
 L' '	L'~'	//   -> ~
 
-DEADKEY UC_CURRENCY
+DEADKEY 0x00a4
 
 L'%'	0x20b0	// % -> ₰
 L'A'	0x20b3	// A -> ₳
 L'B'	0x0e3f	// B -> ฿
 L'C'	0x20b5	// C -> ₵
-L'D'	UC_DRACHMA	// D -> ₯
+L'D'	0x20af	// D -> ₯
 L'F'	0x20a3	// F -> ₣
 L'L'	0x20a4	// L -> ₤
 L'M'	0x2133	// M -> ℳ
@@ -352,10 +346,10 @@ L'R'	0x20b9	// R -> ₹
 L'S'	0x20b7	// S -> ₷
 L'T'	0x20ae	// T -> ₮
 L'b'	0x20bf	// b -> ₿
-L'c'	UC_CENT	// c -> ¢
+L'c'	0x00a2	// c -> ¢
 L'd'	0x20ab	// d -> ₫
 L'e'	0x20a0	// e -> ₠
-L'f'	UC_LATIN_SMALL_F_HOOK	// f -> ƒ
+L'f'	0x0192	// f -> ƒ
 L'g'	0x20b2	// g -> ₲
 L'h'	0x20b4	// h -> ₴
 L'k'	0x20ad	// k -> ₭
@@ -367,81 +361,81 @@ L'r'	0x20bd	// r -> ₽
 L's'	0x20aa	// s -> ₪
 L't'	0x20b8	// t -> ₸
 L'w'	0x20a9	// w -> ₩
-L'y'	UC_YEN	// y -> ¥
+L'y'	0x00a5	// y -> ¥
 L'|'	0x20be	// | -> ₾
-UC_REGISTERED	0x20a8	// ® -> ₨
-UC_UPPER_C_CEDILLA	0x20a1	// Ç -> ₡
-UC_LOWER_C_CEDILLA	0x20a2	// ç -> ₢
-UC_INFINITY	0x20bc	// ∞ -> ₼
+0x00ae	0x20a8	// ® -> ₨
+0x00c7	0x20a1	// Ç -> ₡
+0x00e7	0x20a2	// ç -> ₢
+0x221e	0x20bc	// ∞ -> ₼
 
-UC_MICRO	UC_CURRENCY	// µ -> ¤
-0x017f	UC_CURRENCY	// ſ -> ¤
-UC_NBSP	UC_CURRENCY	//   -> ¤
-UC_NNBSP	UC_CURRENCY	//   -> ¤
-L' '	UC_CURRENCY	//   -> ¤
+0x00b5	0x00a4	// µ -> ¤
+0x017f	0x00a4	// ſ -> ¤
+UC_NBSP	0x00a4	//   -> ¤
+UC_NNBSP	0x00a4	//   -> ¤
+L' '	0x00a4	//   -> ¤
 
-DEADKEY UC_DIAERESIS
+DEADKEY 0x00a8
 
-L'A'	UC_UPPER_A_DIAERESIS	// A -> Ä
-L'E'	UC_UPPER_E_DIAERESIS	// E -> Ë
+L'A'	0x00c4	// A -> Ä
+L'E'	0x00cb	// E -> Ë
 L'H'	0x1e26	// H -> Ḧ
-L'I'	UC_UPPER_I_DIAERESIS	// I -> Ï
-L'O'	UC_UPPER_O_DIAERESIS	// O -> Ö
-L'U'	UC_UPPER_U_DIAERESIS	// U -> Ü
-L'W'	UC_UPPER_W_DIAERESIS	// W -> Ẅ
+L'I'	0x00cf	// I -> Ï
+L'O'	0x00d6	// O -> Ö
+L'U'	0x00dc	// U -> Ü
+L'W'	0x1e84	// W -> Ẅ
 L'X'	0x1e8c	// X -> Ẍ
-L'Y'	UC_UPPER_Y_DIAERESIS	// Y -> Ÿ
-L'a'	UC_LOWER_A_DIAERESIS	// a -> ä
-L'e'	UC_LOWER_E_DIAERESIS	// e -> ë
+L'Y'	0x0178	// Y -> Ÿ
+L'a'	0x00e4	// a -> ä
+L'e'	0x00eb	// e -> ë
 L'h'	0x1e27	// h -> ḧ
-L'i'	UC_LOWER_I_DIAERESIS	// i -> ï
-L'o'	UC_LOWER_O_DIAERESIS	// o -> ö
+L'i'	0x00ef	// i -> ï
+L'o'	0x00f6	// o -> ö
 L't'	0x1e97	// t -> ẗ
-L'u'	UC_LOWER_U_DIAERESIS	// u -> ü
-L'w'	UC_LOWER_W_DIAERESIS	// w -> ẅ
+L'u'	0x00fc	// u -> ü
+L'w'	0x1e85	// w -> ẅ
 L'x'	0x1e8d	// x -> ẍ
-L'y'	UC_LOWER_Y_DIAERESIS	// y -> ÿ
-UC_UPPER_U_GRAVE	0x01db	// Ù -> Ǜ
-UC_LOWER_U_GRAVE	0x01dc	// ù -> ǜ
+L'y'	0x00ff	// y -> ÿ
+0x00d9	0x01db	// Ù -> Ǜ
+0x00f9	0x01dc	// ù -> ǜ
 
-UC_CURRENCY	UC_COMB_DIAERESIS	// ¤ -> ◌̈
-UC_MICRO	UC_COMB_DIAERESIS	// µ -> ◌̈
-0x017f	UC_COMB_DIAERESIS	// ſ -> ◌̈
-UC_NBSP	UC_DIAERESIS	//   -> ¨
-UC_NNBSP	UC_DIAERESIS	//   -> ¨
-L' '	UC_DIAERESIS	//   -> ¨
+0x00a4	0x0308	// ¤ -> ◌̈
+0x00b5	0x0308	// µ -> ◌̈
+0x017f	0x0308	// ſ -> ◌̈
+UC_NBSP	0x00a8	//   -> ¨
+UC_NNBSP	0x00a8	//   -> ¨
+L' '	0x00a8	//   -> ¨
 
-DEADKEY UC_MACRON
+DEADKEY 0x00af
 
-L'A'	UC_UPPER_A_MACRON	// A -> Ā
-L'E'	UC_UPPER_E_MACRON	// E -> Ē
+L'A'	0x0100	// A -> Ā
+L'E'	0x0112	// E -> Ē
 L'G'	0x1e20	// G -> Ḡ
-L'I'	UC_UPPER_I_MACRON	// I -> Ī
-L'O'	UC_UPPER_O_MACRON	// O -> Ō
-L'U'	UC_UPPER_U_MACRON	// U -> Ū
+L'I'	0x012a	// I -> Ī
+L'O'	0x014c	// O -> Ō
+L'U'	0x016a	// U -> Ū
 L'Y'	0x0232	// Y -> Ȳ
-L'a'	UC_LOWER_A_MACRON	// a -> ā
-L'e'	UC_LOWER_E_MACRON	// e -> ē
+L'a'	0x0101	// a -> ā
+L'e'	0x0113	// e -> ē
 L'g'	0x1e21	// g -> ḡ
-L'i'	UC_LOWER_I_MACRON	// i -> ī
-L'o'	UC_LOWER_O_MACRON	// o -> ō
-L'u'	UC_LOWER_U_MACRON	// u -> ū
+L'i'	0x012b	// i -> ī
+L'o'	0x014d	// o -> ō
+L'u'	0x016b	// u -> ū
 L'y'	0x0233	// y -> ȳ
-UC_UPPER_AE	0x01e2	// Æ -> Ǣ
-UC_UPPER_E_GRAVE	0x1e14	// È -> Ḕ
-UC_UPPER_E_ACUTE	0x1e16	// É -> Ḗ
-UC_LOWER_AE	0x01e3	// æ -> ǣ
-UC_LOWER_E_GRAVE	0x1e15	// è -> ḕ
-UC_LOWER_E_ACUTE	0x1e17	// é -> ḗ
+0x00c6	0x01e2	// Æ -> Ǣ
+0x00c8	0x1e14	// È -> Ḕ
+0x00c9	0x1e16	// É -> Ḗ
+0x00e6	0x01e3	// æ -> ǣ
+0x00e8	0x1e15	// è -> ḕ
+0x00e9	0x1e17	// é -> ḗ
 
-UC_CURRENCY	UC_COMB_MACRON	// ¤ -> ◌̄
-UC_MICRO	UC_COMB_MACRON	// µ -> ◌̄
-0x017f	UC_COMB_MACRON	// ſ -> ◌̄
-UC_NBSP	UC_MACRON	//   -> ¯
-UC_NNBSP	UC_MACRON	//   -> ¯
-L' '	UC_MACRON	//   -> ¯
+0x00a4	0x0304	// ¤ -> ◌̄
+0x00b5	0x0304	// µ -> ◌̄
+0x017f	0x0304	// ſ -> ◌̄
+UC_NBSP	0x00af	//   -> ¯
+UC_NNBSP	0x00af	//   -> ¯
+L' '	0x00af	//   -> ¯
 
-DEADKEY UC_COMB_INV_BREVE
+DEADKEY 0x0311
 
 L'A'	0x0202	// A -> Ȃ
 L'E'	0x0206	// E -> Ȇ
@@ -455,196 +449,196 @@ L'i'	0x020b	// i -> ȋ
 L'o'	0x020f	// o -> ȏ
 L'r'	0x0213	// r -> ȓ
 L'u'	0x0217	// u -> ȗ
-UC_UPPER_A_GRAVE	0x1ea6	// À -> Ầ
-UC_UPPER_E_GRAVE	0x1ec0	// È -> Ề
-UC_LOWER_A_GRAVE	0x1ea7	// à -> ầ
-UC_LOWER_E_GRAVE	0x1ec1	// è -> ề
+0x00c0	0x1ea6	// À -> Ầ
+0x00c8	0x1ec0	// È -> Ề
+0x00e0	0x1ea7	// à -> ầ
+0x00e8	0x1ec1	// è -> ề
 
-UC_CURRENCY	UC_COMB_INV_BREVE	// ¤ -> ◌̑
-UC_MICRO	UC_COMB_INV_BREVE	// µ -> ◌̑
-0x017f	UC_COMB_INV_BREVE	// ſ -> ◌̑
-UC_NBSP	UC_COMB_INV_BREVE	//   -> ◌̑
-UC_NNBSP	UC_COMB_INV_BREVE	//   -> ◌̑
-L' '	UC_COMB_INV_BREVE	//   -> ◌̑
+0x00a4	0x0311	// ¤ -> ◌̑
+0x00b5	0x0311	// µ -> ◌̑
+0x017f	0x0311	// ſ -> ◌̑
+UC_NBSP	0x0311	//   -> ◌̑
+UC_NNBSP	0x0311	//   -> ◌̑
+L' '	0x0311	//   -> ◌̑
 
-DEADKEY UC_ACUTE
+DEADKEY 0x00b4
 
-L'A'	UC_UPPER_A_ACUTE	// A -> Á
-L'C'	UC_UPPER_C_ACUTE	// C -> Ć
-L'E'	UC_UPPER_E_ACUTE	// E -> É
+L'A'	0x00c1	// A -> Á
+L'C'	0x0106	// C -> Ć
+L'E'	0x00c9	// E -> É
 L'G'	0x01f4	// G -> Ǵ
-L'I'	UC_UPPER_I_ACUTE	// I -> Í
+L'I'	0x00cd	// I -> Í
 L'K'	0x1e30	// K -> Ḱ
-L'L'	UC_UPPER_L_ACUTE	// L -> Ĺ
+L'L'	0x0139	// L -> Ĺ
 L'M'	0x1e3e	// M -> Ḿ
-L'N'	UC_UPPER_N_ACUTE	// N -> Ń
-L'O'	UC_UPPER_O_ACUTE	// O -> Ó
+L'N'	0x0143	// N -> Ń
+L'O'	0x00d3	// O -> Ó
 L'P'	0x1e54	// P -> Ṕ
-L'R'	UC_UPPER_R_ACUTE	// R -> Ŕ
-L'S'	UC_UPPER_S_ACUTE	// S -> Ś
-L'U'	UC_UPPER_U_ACUTE	// U -> Ú
-L'W'	UC_UPPER_W_ACUTE	// W -> Ẃ
-L'Y'	UC_UPPER_Y_ACUTE	// Y -> Ý
-L'Z'	UC_UPPER_Z_ACUTE	// Z -> Ź
-L'a'	UC_LOWER_A_ACUTE	// a -> á
-L'c'	UC_LOWER_C_ACUTE	// c -> ć
-L'e'	UC_LOWER_E_ACUTE	// e -> é
+L'R'	0x0154	// R -> Ŕ
+L'S'	0x015a	// S -> Ś
+L'U'	0x00da	// U -> Ú
+L'W'	0x1e82	// W -> Ẃ
+L'Y'	0x00dd	// Y -> Ý
+L'Z'	0x0179	// Z -> Ź
+L'a'	0x00e1	// a -> á
+L'c'	0x0107	// c -> ć
+L'e'	0x00e9	// e -> é
 L'g'	0x01f5	// g -> ǵ
-L'i'	UC_LOWER_I_ACUTE	// i -> í
+L'i'	0x00ed	// i -> í
 L'k'	0x1e31	// k -> ḱ
-L'l'	UC_LOWER_L_ACUTE	// l -> ĺ
+L'l'	0x013a	// l -> ĺ
 L'm'	0x1e3f	// m -> ḿ
-L'n'	UC_LOWER_N_ACUTE	// n -> ń
-L'o'	UC_LOWER_O_ACUTE	// o -> ó
+L'n'	0x0144	// n -> ń
+L'o'	0x00f3	// o -> ó
 L'p'	0x1e55	// p -> ṕ
-L'r'	UC_LOWER_R_ACUTE	// r -> ŕ
-L's'	UC_LOWER_S_ACUTE	// s -> ś
-L'u'	UC_LOWER_U_ACUTE	// u -> ú
-L'w'	UC_LOWER_W_ACUTE	// w -> ẃ
-L'y'	UC_LOWER_Y_ACUTE	// y -> ý
-L'z'	UC_LOWER_Z_ACUTE	// z -> ź
-UC_UPPER_AE	0x01fc	// Æ -> Ǽ
-UC_UPPER_C_CEDILLA	0x1e08	// Ç -> Ḉ
-UC_UPPER_E_CIRCUMFLEX	0x1ebe	// Ê -> Ế
-UC_LOWER_AE	0x01fd	// æ -> ǽ
-UC_LOWER_C_CEDILLA	0x1e09	// ç -> ḉ
-UC_LOWER_E_CIRCUMFLEX	0x1ebf	// ê -> ế
+L'r'	0x0155	// r -> ŕ
+L's'	0x015b	// s -> ś
+L'u'	0x00fa	// u -> ú
+L'w'	0x1e83	// w -> ẃ
+L'y'	0x00fd	// y -> ý
+L'z'	0x017a	// z -> ź
+0x00c6	0x01fc	// Æ -> Ǽ
+0x00c7	0x1e08	// Ç -> Ḉ
+0x00ca	0x1ebe	// Ê -> Ế
+0x00e6	0x01fd	// æ -> ǽ
+0x00e7	0x1e09	// ç -> ḉ
+0x00ea	0x1ebf	// ê -> ế
 
-UC_CURRENCY	UC_COMB_ACUTE	// ¤ -> ◌́
-UC_MICRO	UC_COMB_ACUTE	// µ -> ◌́
-0x017f	UC_COMB_ACUTE	// ſ -> ◌́
-UC_NBSP	UC_ACUTE	//   -> ´
-UC_NNBSP	UC_ACUTE	//   -> ´
-L' '	UC_ACUTE	//   -> ´
+0x00a4	0x0301	// ¤ -> ◌́
+0x00b5	0x0301	// µ -> ◌́
+0x017f	0x0301	// ſ -> ◌́
+UC_NBSP	0x00b4	//   -> ´
+UC_NNBSP	0x00b4	//   -> ´
+L' '	0x00b4	//   -> ´
 
-DEADKEY UC_MICRO
+DEADKEY 0x00b5
 
-L'A'	UC_UPPER_ALPHA	// A -> Α
-L'B'	UC_UPPER_BETA	// B -> Β
-L'C'	UC_UPPER_PSI	// C -> Ψ
-L'D'	UC_UPPER_DELTA	// D -> Δ
-L'E'	UC_UPPER_EPSILON	// E -> Ε
-L'F'	UC_UPPER_PHI	// F -> Φ
-L'G'	UC_UPPER_GAMMA	// G -> Γ
-L'H'	UC_UPPER_ETA	// H -> Η
-L'I'	UC_UPPER_IOTA	// I -> Ι
-L'J'	UC_UPPER_XI	// J -> Ξ
-L'K'	UC_UPPER_KAPPA	// K -> Κ
-L'L'	UC_UPPER_LAMDA	// L -> Λ
-L'M'	UC_UPPER_MU	// M -> Μ
-L'N'	UC_UPPER_NU	// N -> Ν
-L'O'	UC_UPPER_OMICRON	// O -> Ο
-L'P'	UC_UPPER_PI	// P -> Π
-L'R'	UC_UPPER_RHO	// R -> Ρ
-L'S'	UC_UPPER_SIGMA	// S -> Σ
-L'T'	UC_UPPER_TAU	// T -> Τ
-L'U'	UC_UPPER_THETA	// U -> Θ
-L'V'	UC_UPPER_OMEGA	// V -> Ω
-L'X'	UC_UPPER_CHI	// X -> Χ
-L'Y'	UC_UPPER_UPSILON	// Y -> Υ
-L'Z'	UC_UPPER_ZETA	// Z -> Ζ
-L'a'	UC_LOWER_ALPHA	// a -> α
-L'b'	UC_LOWER_BETA	// b -> β
-L'c'	UC_LOWER_PSI	// c -> ψ
-L'd'	UC_LOWER_DELTA	// d -> δ
-L'e'	UC_LOWER_EPSILON	// e -> ε
-L'f'	UC_LOWER_PHI	// f -> φ
-L'g'	UC_LOWER_GAMMA	// g -> γ
-L'h'	UC_LOWER_ETA	// h -> η
-L'i'	UC_LOWER_IOTA	// i -> ι
-L'j'	UC_LOWER_XI	// j -> ξ
-L'k'	UC_LOWER_KAPPA	// k -> κ
-L'l'	UC_LOWER_LAMDA	// l -> λ
-L'm'	UC_LOWER_MU	// m -> μ
-L'n'	UC_LOWER_NU	// n -> ν
-L'o'	UC_LOWER_OMICRON	// o -> ο
-L'p'	UC_LOWER_PI	// p -> π
-L'r'	UC_LOWER_RHO	// r -> ρ
-L's'	UC_LOWER_SIGMA	// s -> σ
-L't'	UC_LOWER_TAU	// t -> τ
-L'u'	UC_LOWER_THETA	// u -> θ
-L'v'	UC_LOWER_OMEGA	// v -> ω
-L'w'	UC_LOWER_FINAL_SIGMA	// w -> ς
-L'x'	UC_LOWER_CHI	// x -> χ
-L'y'	UC_LOWER_UPSILON	// y -> υ
-L'z'	UC_LOWER_ZETA	// z -> ζ
+L'A'	0x0391	// A -> Α
+L'B'	0x0392	// B -> Β
+L'C'	0x03a8	// C -> Ψ
+L'D'	0x0394	// D -> Δ
+L'E'	0x0395	// E -> Ε
+L'F'	0x03a6	// F -> Φ
+L'G'	0x0393	// G -> Γ
+L'H'	0x0397	// H -> Η
+L'I'	0x0399	// I -> Ι
+L'J'	0x039e	// J -> Ξ
+L'K'	0x039a	// K -> Κ
+L'L'	0x039b	// L -> Λ
+L'M'	0x039c	// M -> Μ
+L'N'	0x039d	// N -> Ν
+L'O'	0x039f	// O -> Ο
+L'P'	0x03a0	// P -> Π
+L'R'	0x03a1	// R -> Ρ
+L'S'	0x03a3	// S -> Σ
+L'T'	0x03a4	// T -> Τ
+L'U'	0x0398	// U -> Θ
+L'V'	0x03a9	// V -> Ω
+L'X'	0x03a7	// X -> Χ
+L'Y'	0x03a5	// Y -> Υ
+L'Z'	0x0396	// Z -> Ζ
+L'a'	0x03b1	// a -> α
+L'b'	0x03b2	// b -> β
+L'c'	0x03c8	// c -> ψ
+L'd'	0x03b4	// d -> δ
+L'e'	0x03b5	// e -> ε
+L'f'	0x03c6	// f -> φ
+L'g'	0x03b3	// g -> γ
+L'h'	0x03b7	// h -> η
+L'i'	0x03b9	// i -> ι
+L'j'	0x03be	// j -> ξ
+L'k'	0x03ba	// k -> κ
+L'l'	0x03bb	// l -> λ
+L'm'	0x03bc	// m -> μ
+L'n'	0x03bd	// n -> ν
+L'o'	0x03bf	// o -> ο
+L'p'	0x03c0	// p -> π
+L'r'	0x03c1	// r -> ρ
+L's'	0x03c3	// s -> σ
+L't'	0x03c4	// t -> τ
+L'u'	0x03b8	// u -> θ
+L'v'	0x03c9	// v -> ω
+L'w'	0x03c2	// w -> ς
+L'x'	0x03c7	// x -> χ
+L'y'	0x03c5	// y -> υ
+L'z'	0x03b6	// z -> ζ
 
-UC_CURRENCY	UC_MICRO	// ¤ -> µ
-0x017f	UC_MICRO	// ſ -> µ
-UC_NBSP	UC_MICRO	//   -> µ
-UC_NNBSP	UC_MICRO	//   -> µ
-L' '	UC_MICRO	//   -> µ
+0x00a4	0x00b5	// ¤ -> µ
+0x017f	0x00b5	// ſ -> µ
+UC_NBSP	0x00b5	//   -> µ
+UC_NNBSP	0x00b5	//   -> µ
+L' '	0x00b5	//   -> µ
 
-DEADKEY UC_CEDILLA
+DEADKEY 0x00b8
 
-L'C'	UC_UPPER_C_CEDILLA	// C -> Ç
+L'C'	0x00c7	// C -> Ç
 L'D'	0x1e10	// D -> Ḑ
 L'E'	0x0228	// E -> Ȩ
-L'G'	UC_UPPER_G_CEDILLA	// G -> Ģ
+L'G'	0x0122	// G -> Ģ
 L'H'	0x1e28	// H -> Ḩ
-L'K'	UC_UPPER_K_CEDILLA	// K -> Ķ
-L'L'	UC_UPPER_L_CEDILLA	// L -> Ļ
-L'N'	UC_UPPER_N_CEDILLA	// N -> Ņ
-L'R'	UC_UPPER_R_CEDILLA	// R -> Ŗ
-L'S'	UC_UPPER_S_CEDILLA	// S -> Ş
-L'T'	UC_UPPER_T_CEDILLA	// T -> Ţ
-L'c'	UC_LOWER_C_CEDILLA	// c -> ç
+L'K'	0x0136	// K -> Ķ
+L'L'	0x013b	// L -> Ļ
+L'N'	0x0145	// N -> Ņ
+L'R'	0x0156	// R -> Ŗ
+L'S'	0x015e	// S -> Ş
+L'T'	0x0162	// T -> Ţ
+L'c'	0x00e7	// c -> ç
 L'd'	0x1e11	// d -> ḑ
 L'e'	0x0229	// e -> ȩ
-L'g'	UC_LOWER_G_CEDILLA	// g -> ģ
+L'g'	0x0123	// g -> ģ
 L'h'	0x1e29	// h -> ḩ
-L'k'	UC_LOWER_K_CEDILLA	// k -> ķ
-L'l'	UC_LOWER_L_CEDILLA	// l -> ļ
-L'n'	UC_LOWER_N_CEDILLA	// n -> ņ
-L'r'	UC_LOWER_R_CEDILLA	// r -> ŗ
-L's'	UC_LOWER_S_CEDILLA	// s -> ş
-L't'	UC_LOWER_T_CEDILLA	// t -> ţ
+L'k'	0x0137	// k -> ķ
+L'l'	0x013c	// l -> ļ
+L'n'	0x0146	// n -> ņ
+L'r'	0x0157	// r -> ŗ
+L's'	0x015f	// s -> ş
+L't'	0x0163	// t -> ţ
 
-UC_CURRENCY	UC_COMB_CEDILLA	// ¤ -> ◌̧
-UC_MICRO	UC_COMB_CEDILLA	// µ -> ◌̧
-0x017f	UC_COMB_CEDILLA	// ſ -> ◌̧
-UC_NBSP	UC_CEDILLA	//   -> ¸
-UC_NNBSP	UC_CEDILLA	//   -> ¸
-L' '	UC_CEDILLA	//   -> ¸
+0x00a4	0x0327	// ¤ -> ◌̧
+0x00b5	0x0327	// µ -> ◌̧
+0x017f	0x0327	// ſ -> ◌̧
+UC_NBSP	0x00b8	//   -> ¸
+UC_NNBSP	0x00b8	//   -> ¸
+L' '	0x00b8	//   -> ¸
 
 DEADKEY 0x017f
 
 L'\''	0x02bc	// ' -> ʼ
-L'0'	UC_DA_LEFT_QUOT	// 0 -> «
-L'7'	UC_SA_RIGHT_QUOT	// 7 -> ›
-L'8'	UC_SA_LEFT_QUOT	// 8 -> ‹
-L'9'	UC_DA_RIGHT_QUOT	// 9 -> »
-L'<'	UC_LESS_EQUAL	// < -> ≤
-L'>'	UC_GREATER_EQUAL	// > -> ≥
-L'D'	UC_UPPER_ETH	// D -> Ð
+L'0'	0x00ab	// 0 -> «
+L'7'	0x203a	// 7 -> ›
+L'8'	0x2039	// 8 -> ‹
+L'9'	0x00bb	// 9 -> »
+L'<'	0x2264	// < -> ≤
+L'>'	0x2265	// > -> ≥
+L'D'	0x00d0	// D -> Ð
 L'E'	0x018f	// E -> Ə
-L'G'	UC_UPPER_ENG	// G -> Ŋ
-L'I'	UC_UPPER_I_DOT_ABOVE	// I -> İ
+L'G'	0x014a	// G -> Ŋ
+L'I'	0x0130	// I -> İ
 L'J'	0x0132	// J -> Ĳ
-L'T'	UC_UPPER_THORN	// T -> Þ
-L'a'	UC_FORDINAL	// a -> ª
-L'd'	UC_LOWER_ETH	// d -> ð
+L'T'	0x00de	// T -> Þ
+L'a'	0x00aa	// a -> ª
+L'd'	0x00f0	// d -> ð
 L'e'	0x0259	// e -> ə
-L'g'	UC_LOWER_ENG	// g -> ŋ
-L'i'	UC_LOWER_DOTLESS_I	// i -> ı
+L'g'	0x014b	// g -> ŋ
+L'i'	0x0131	// i -> ı
 L'j'	0x0133	// j -> ĳ
-L'o'	UC_MORDINAL	// o -> º
+L'o'	0x00ba	// o -> º
 L's'	0x017f	// s -> ſ
-L't'	UC_LOWER_THORN	// t -> þ
-UC_NBSP	UC_EM_SPACE	//   ->  
-UC_DA_LEFT_QUOT	UC_D9_QUOT	// « -> „
-UC_DA_RIGHT_QUOT	0x201f	// » -> ‟
-0x017f	UC_NULL	// ſ -> ␀
-UC_S_LEFT_QUOT	UC_S9_QUOT	// ‘ -> ‚
-UC_S_RIGHT_QUOT	0x201b	// ’ -> ‛
-UC_NNBSP	UC_EN_SPACE	//   ->  
-UC_CURRENCY	UC_NULL	// ¤ -> ␀
-UC_MICRO	UC_NULL	// µ -> ␀
-UC_NBSP	UC_NULL	//   -> ␀
-UC_NNBSP	UC_NULL	//   -> ␀
-L' '	UC_NULL	//   -> ␀
+L't'	0x00fe	// t -> þ
+UC_NBSP	0x2003	//   ->  
+0x00ab	0x201e	// « -> „
+0x00bb	0x201f	// » -> ‟
+0x017f	0x0000	// ſ -> ␀
+0x2018	0x201a	// ‘ -> ‚
+0x2019	0x201b	// ’ -> ‛
+UC_NNBSP	0x2002	//   ->  
+0x00a4	0x0000	// ¤ -> ␀
+0x00b5	0x0000	// µ -> ␀
+UC_NBSP	0x0000	//   -> ␀
+UC_NNBSP	0x0000	//   -> ␀
+L' '	0x0000	//   -> ␀
 
-DEADKEY UC_CARON
+DEADKEY 0x02c7
 
 L'('	0x208d	// ( -> ₍
 L')'	0x208e	// ) -> ₎
@@ -662,48 +656,48 @@ L'8'	0x2088	// 8 -> ₈
 L'9'	0x2089	// 9 -> ₉
 L'='	0x208c	// = -> ₌
 L'A'	0x01cd	// A -> Ǎ
-L'C'	UC_UPPER_C_CARON	// C -> Č
-L'D'	UC_UPPER_D_CARON	// D -> Ď
-L'E'	UC_UPPER_E_CARON	// E -> Ě
+L'C'	0x010c	// C -> Č
+L'D'	0x010e	// D -> Ď
+L'E'	0x011a	// E -> Ě
 L'G'	0x01e6	// G -> Ǧ
 L'H'	0x021e	// H -> Ȟ
 L'I'	0x01cf	// I -> Ǐ
 L'K'	0x01e8	// K -> Ǩ
-L'L'	UC_UPPER_L_CARON	// L -> Ľ
-L'N'	UC_UPPER_N_CARON	// N -> Ň
+L'L'	0x013d	// L -> Ľ
+L'N'	0x0147	// N -> Ň
 L'O'	0x01d1	// O -> Ǒ
-L'R'	UC_UPPER_R_CARON	// R -> Ř
-L'S'	UC_UPPER_S_CARON	// S -> Š
-L'T'	UC_UPPER_T_CARON	// T -> Ť
+L'R'	0x0158	// R -> Ř
+L'S'	0x0160	// S -> Š
+L'T'	0x0164	// T -> Ť
 L'U'	0x01d3	// U -> Ǔ
-L'Z'	UC_UPPER_Z_CARON	// Z -> Ž
+L'Z'	0x017d	// Z -> Ž
 L'a'	0x01ce	// a -> ǎ
-L'c'	UC_LOWER_C_CARON	// c -> č
-L'd'	UC_LOWER_D_CARON	// d -> ď
-L'e'	UC_LOWER_E_CARON	// e -> ě
+L'c'	0x010d	// c -> č
+L'd'	0x010f	// d -> ď
+L'e'	0x011b	// e -> ě
 L'g'	0x01e7	// g -> ǧ
 L'h'	0x021f	// h -> ȟ
 L'i'	0x01d0	// i -> ǐ
 L'j'	0x01f0	// j -> ǰ
 L'k'	0x01e9	// k -> ǩ
-L'l'	UC_LOWER_L_CARON	// l -> ľ
-L'n'	UC_LOWER_N_CARON	// n -> ň
+L'l'	0x013e	// l -> ľ
+L'n'	0x0148	// n -> ň
 L'o'	0x01d2	// o -> ǒ
-L'r'	UC_LOWER_R_CARON	// r -> ř
-L's'	UC_LOWER_S_CARON	// s -> š
-L't'	UC_LOWER_T_CARON	// t -> ť
+L'r'	0x0159	// r -> ř
+L's'	0x0161	// s -> š
+L't'	0x0165	// t -> ť
 L'u'	0x01d4	// u -> ǔ
 L'x'	0x2093	// x -> ₓ
-L'z'	UC_LOWER_Z_CARON	// z -> ž
+L'z'	0x017e	// z -> ž
 0x01b7	0x01ee	// Ʒ -> Ǯ
 0x0292	0x01ef	// ʒ -> ǯ
 
-UC_CURRENCY	UC_COMB_CARON	// ¤ -> ◌̌
-UC_MICRO	UC_COMB_CARON	// µ -> ◌̌
-0x017f	UC_COMB_CARON	// ſ -> ◌̌
-UC_NBSP	UC_CARON	//   -> ˇ
-UC_NNBSP	UC_CARON	//   -> ˇ
-L' '	UC_CARON	//   -> ˇ
+0x00a4	0x030c	// ¤ -> ◌̌
+0x00b5	0x030c	// µ -> ◌̌
+0x017f	0x030c	// ſ -> ◌̌
+UC_NBSP	0x02c7	//   -> ˇ
+UC_NNBSP	0x02c7	//   -> ˇ
+L' '	0x02c7	//   -> ˇ
 
 DEADKEY 0x02cd
 
@@ -725,138 +719,138 @@ L'r'	0x1e5f	// r -> ṟ
 L't'	0x1e6f	// t -> ṯ
 L'z'	0x1e95	// z -> ẕ
 
-UC_CURRENCY	UC_COMB_MACRON_BELOW	// ¤ -> ◌̱
-UC_MICRO	UC_COMB_MACRON_BELOW	// µ -> ◌̱
-0x017f	UC_COMB_MACRON_BELOW	// ſ -> ◌̱
+0x00a4	0x0331	// ¤ -> ◌̱
+0x00b5	0x0331	// µ -> ◌̱
+0x017f	0x0331	// ſ -> ◌̱
 UC_NBSP	0x02cd	//   -> ˍ
 UC_NNBSP	0x02cd	//   -> ˍ
 L' '	0x02cd	//   -> ˍ
 
-DEADKEY UC_BREVE
+DEADKEY 0x02d8
 
-L'A'	UC_UPPER_A_BREVE	// A -> Ă
+L'A'	0x0102	// A -> Ă
 L'E'	0x0114	// E -> Ĕ
-L'G'	UC_UPPER_G_BREVE	// G -> Ğ
+L'G'	0x011e	// G -> Ğ
 L'I'	0x012c	// I -> Ĭ
 L'O'	0x014e	// O -> Ŏ
-L'U'	UC_UPPER_U_BREVE	// U -> Ŭ
-L'a'	UC_LOWER_A_BREVE	// a -> ă
+L'U'	0x016c	// U -> Ŭ
+L'a'	0x0103	// a -> ă
 L'e'	0x0115	// e -> ĕ
-L'g'	UC_LOWER_G_BREVE	// g -> ğ
+L'g'	0x011f	// g -> ğ
 L'i'	0x012d	// i -> ĭ
 L'o'	0x014f	// o -> ŏ
-L'u'	UC_LOWER_U_BREVE	// u -> ŭ
-UC_UPPER_A_GRAVE	0x1eb0	// À -> Ằ
-UC_LOWER_A_GRAVE	0x1eb1	// à -> ằ
+L'u'	0x016d	// u -> ŭ
+0x00c0	0x1eb0	// À -> Ằ
+0x00e0	0x1eb1	// à -> ằ
 
-UC_CURRENCY	UC_COMB_BREVE	// ¤ -> ◌̆
-UC_MICRO	UC_COMB_BREVE	// µ -> ◌̆
-0x017f	UC_COMB_BREVE	// ſ -> ◌̆
-UC_NBSP	UC_BREVE	//   -> ˘
-UC_NNBSP	UC_BREVE	//   -> ˘
-L' '	UC_BREVE	//   -> ˘
+0x00a4	0x0306	// ¤ -> ◌̆
+0x00b5	0x0306	// µ -> ◌̆
+0x017f	0x0306	// ſ -> ◌̆
+UC_NBSP	0x02d8	//   -> ˘
+UC_NNBSP	0x02d8	//   -> ˘
+L' '	0x02d8	//   -> ˘
 
-DEADKEY UC_DOT_ABOVE
+DEADKEY 0x02d9
 
 L'A'	0x0226	// A -> Ȧ
-L'B'	UC_UPPER_B_DOT_ABOVE	// B -> Ḃ
-L'C'	UC_UPPER_C_DOT_ABOVE	// C -> Ċ
-L'D'	UC_UPPER_D_DOT_ABOVE	// D -> Ḋ
-L'E'	UC_UPPER_E_DOT_ABOVE	// E -> Ė
-L'F'	UC_UPPER_F_DOT_ABOVE	// F -> Ḟ
-L'G'	UC_UPPER_G_DOT_ABOVE	// G -> Ġ
+L'B'	0x1e02	// B -> Ḃ
+L'C'	0x010a	// C -> Ċ
+L'D'	0x1e0a	// D -> Ḋ
+L'E'	0x0116	// E -> Ė
+L'F'	0x1e1e	// F -> Ḟ
+L'G'	0x0120	// G -> Ġ
 L'H'	0x1e22	// H -> Ḣ
-L'I'	UC_UPPER_I_DOT_ABOVE	// I -> İ
+L'I'	0x0130	// I -> İ
 L'L'	0x013f	// L -> Ŀ
-L'M'	UC_UPPER_M_DOT_ABOVE	// M -> Ṁ
+L'M'	0x1e40	// M -> Ṁ
 L'N'	0x1e44	// N -> Ṅ
 L'O'	0x022e	// O -> Ȯ
-L'P'	UC_UPPER_P_DOT_ABOVE	// P -> Ṗ
+L'P'	0x1e56	// P -> Ṗ
 L'R'	0x1e58	// R -> Ṙ
-L'S'	UC_UPPER_S_DOT_ABOVE	// S -> Ṡ
-L'T'	UC_UPPER_T_DOT_ABOVE	// T -> Ṫ
+L'S'	0x1e60	// S -> Ṡ
+L'T'	0x1e6a	// T -> Ṫ
 L'W'	0x1e86	// W -> Ẇ
 L'X'	0x1e8a	// X -> Ẋ
 L'Y'	0x1e8e	// Y -> Ẏ
-L'Z'	UC_UPPER_Z_DOT_ABOVE	// Z -> Ż
+L'Z'	0x017b	// Z -> Ż
 L'a'	0x0227	// a -> ȧ
-L'b'	UC_LOWER_B_DOT_ABOVE	// b -> ḃ
-L'c'	UC_LOWER_C_DOT_ABOVE	// c -> ċ
-L'd'	UC_LOWER_D_DOT_ABOVE	// d -> ḋ
-L'e'	UC_LOWER_E_DOT_ABOVE	// e -> ė
-L'f'	UC_LOWER_F_DOT_ABOVE	// f -> ḟ
-L'g'	UC_LOWER_G_DOT_ABOVE	// g -> ġ
+L'b'	0x1e03	// b -> ḃ
+L'c'	0x010b	// c -> ċ
+L'd'	0x1e0b	// d -> ḋ
+L'e'	0x0117	// e -> ė
+L'f'	0x1e1f	// f -> ḟ
+L'g'	0x0121	// g -> ġ
 L'h'	0x1e23	// h -> ḣ
-L'i'	UC_LOWER_DOTLESS_I	// i -> ı
+L'i'	0x0131	// i -> ı
 L'l'	0x0140	// l -> ŀ
-L'm'	UC_LOWER_M_DOT_ABOVE	// m -> ṁ
+L'm'	0x1e41	// m -> ṁ
 L'n'	0x1e45	// n -> ṅ
 L'o'	0x022f	// o -> ȯ
-L'p'	UC_LOWER_P_DOT_ABOVE	// p -> ṗ
+L'p'	0x1e57	// p -> ṗ
 L'r'	0x1e59	// r -> ṙ
-L's'	UC_LOWER_S_DOT_ABOVE	// s -> ṡ
-L't'	UC_LOWER_T_DOT_ABOVE	// t -> ṫ
+L's'	0x1e61	// s -> ṡ
+L't'	0x1e6b	// t -> ṫ
 L'w'	0x1e87	// w -> ẇ
 L'x'	0x1e8b	// x -> ẋ
 L'y'	0x1e8f	// y -> ẏ
-L'z'	UC_LOWER_Z_DOT_ABOVE	// z -> ż
+L'z'	0x017c	// z -> ż
 0x017f	0x1e9b	// ſ -> ẛ
 
-UC_CURRENCY	UC_COMB_DOT_ABOVE	// ¤ -> ◌̇
-UC_MICRO	UC_COMB_DOT_ABOVE	// µ -> ◌̇
-UC_NBSP	UC_DOT_ABOVE	//   -> ˙
-UC_NNBSP	UC_DOT_ABOVE	//   -> ˙
-L' '	UC_DOT_ABOVE	//   -> ˙
+0x00a4	0x0307	// ¤ -> ◌̇
+0x00b5	0x0307	// µ -> ◌̇
+UC_NBSP	0x02d9	//   -> ˙
+UC_NNBSP	0x02d9	//   -> ˙
+L' '	0x02d9	//   -> ˙
 
 DEADKEY 0x02da
 
-L'A'	UC_UPPER_A_RING_ABOVE	// A -> Å
-L'U'	UC_UPPER_U_RING_ABOVE	// U -> Ů
-L'a'	UC_LOWER_A_RING_ABOVE	// a -> å
-L'u'	UC_LOWER_U_RING_ABOVE	// u -> ů
+L'A'	0x00c5	// A -> Å
+L'U'	0x016e	// U -> Ů
+L'a'	0x00e5	// a -> å
+L'u'	0x016f	// u -> ů
 L'w'	0x1e98	// w -> ẘ
 L'y'	0x1e99	// y -> ẙ
 
-UC_CURRENCY	UC_COMB_RING_ABOVE	// ¤ -> ◌̊
-UC_MICRO	UC_COMB_RING_ABOVE	// µ -> ◌̊
-0x017f	UC_COMB_RING_ABOVE	// ſ -> ◌̊
+0x00a4	0x030a	// ¤ -> ◌̊
+0x00b5	0x030a	// µ -> ◌̊
+0x017f	0x030a	// ſ -> ◌̊
 UC_NBSP	0x02da	//   -> ˚
 UC_NNBSP	0x02da	//   -> ˚
 L' '	0x02da	//   -> ˚
 
-DEADKEY UC_OGONEK
+DEADKEY 0x02db
 
-L'A'	UC_UPPER_A_OGONEK	// A -> Ą
-L'E'	UC_UPPER_E_OGONEK	// E -> Ę
-L'I'	UC_UPPER_I_OGONEK	// I -> Į
+L'A'	0x0104	// A -> Ą
+L'E'	0x0118	// E -> Ę
+L'I'	0x012e	// I -> Į
 L'O'	0x01ea	// O -> Ǫ
-L'U'	UC_UPPER_U_OGONEK	// U -> Ų
-L'a'	UC_LOWER_A_OGONEK	// a -> ą
-L'e'	UC_LOWER_E_OGONEK	// e -> ę
-L'i'	UC_LOWER_I_OGONEK	// i -> į
+L'U'	0x0172	// U -> Ų
+L'a'	0x0105	// a -> ą
+L'e'	0x0119	// e -> ę
+L'i'	0x012f	// i -> į
 L'o'	0x01eb	// o -> ǫ
-L'u'	UC_LOWER_U_OGONEK	// u -> ų
+L'u'	0x0173	// u -> ų
 
-UC_CURRENCY	UC_COMB_OGONEK	// ¤ -> ◌̨
-UC_MICRO	UC_COMB_OGONEK	// µ -> ◌̨
-0x017f	UC_COMB_OGONEK	// ſ -> ◌̨
-UC_NBSP	UC_OGONEK	//   -> ˛
-UC_NNBSP	UC_OGONEK	//   -> ˛
-L' '	UC_OGONEK	//   -> ˛
+0x00a4	0x0328	// ¤ -> ◌̨
+0x00b5	0x0328	// µ -> ◌̨
+0x017f	0x0328	// ſ -> ◌̨
+UC_NBSP	0x02db	//   -> ˛
+UC_NNBSP	0x02db	//   -> ˛
+L' '	0x02db	//   -> ˛
 
-DEADKEY UC_DOUBLE_ACUTE
+DEADKEY 0x02dd
 
-L'O'	UC_UPPER_O_DACUTE	// O -> Ő
-L'U'	UC_UPPER_U_DACUTE	// U -> Ű
-L'o'	UC_LOWER_O_DACUTE	// o -> ő
-L'u'	UC_LOWER_U_DACUTE	// u -> ű
+L'O'	0x0150	// O -> Ő
+L'U'	0x0170	// U -> Ű
+L'o'	0x0151	// o -> ő
+L'u'	0x0171	// u -> ű
 
-UC_CURRENCY	UC_COMB_DOUBLE_ACUTE	// ¤ -> ◌̋
-UC_MICRO	UC_COMB_DOUBLE_ACUTE	// µ -> ◌̋
-0x017f	UC_COMB_DOUBLE_ACUTE	// ſ -> ◌̋
-UC_NBSP	UC_DOUBLE_ACUTE	//   -> ˝
-UC_NNBSP	UC_DOUBLE_ACUTE	//   -> ˝
-L' '	UC_DOUBLE_ACUTE	//   -> ˝
+0x00a4	0x030b	// ¤ -> ◌̋
+0x00b5	0x030b	// µ -> ◌̋
+0x017f	0x030b	// ſ -> ◌̋
+UC_NBSP	0x02dd	//   -> ˝
+UC_NNBSP	0x02dd	//   -> ˝
+L' '	0x02dd	//   -> ˝
 
 DEADKEY 0x02f5
 
@@ -873,9 +867,9 @@ L'o'	0x020d	// o -> ȍ
 L'r'	0x0211	// r -> ȑ
 L'u'	0x0215	// u -> ȕ
 
-UC_CURRENCY	UC_COMB_DOUBLE_GRAVE	// ¤ -> ◌̏
-UC_MICRO	UC_COMB_DOUBLE_GRAVE	// µ -> ◌̏
-0x017f	UC_COMB_DOUBLE_GRAVE	// ſ -> ◌̏
+0x00a4	0x030f	// ¤ -> ◌̏
+0x00b5	0x030f	// µ -> ◌̏
+0x017f	0x030f	// ſ -> ◌̏
 UC_NBSP	0x02f5	//   -> ˵
 UC_NNBSP	0x02f5	//   -> ˵
 L' '	0x02f5	//   -> ˵
